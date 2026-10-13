@@ -23,6 +23,9 @@
         "ocr": "printcraft.ocr/1",
         "ocrBackend": "printcraft.ocr-backend/1"
       }
+    },
+    "ai.nanoco.nanoclaw": {
+      "agentName": "PrintCraft"
     }
   },
   "repository": "https://github.com/full-aigc-plugins/printcraft-plugin",

@@ -1,0 +1,27 @@
+{
+  "name": "full-aigc-plugins-printcraft",
+  "interface": {
+    "displayName": "PrintCraft"
+  },
+  "plugins": [
+    {
+      "name": "printcraft",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/full-aigc-plugins/printcraft-plugin.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity",
+      "version": "0.1.0-dev.6",
+      "description": "PDF 检查、页面编辑、单会话计划与摘要绑定验收；受控测试预发布，专项门禁仍开放。",
+      "interface": {
+        "displayName": "PrintCraft",
+        "shortDescription": "PDF tasks with verified artifacts"
+      }
+    }
+  ]
+}
