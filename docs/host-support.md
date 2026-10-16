@@ -6,7 +6,7 @@
 | Claude Code | portable 结构 | NOT_RUN | 没有实际安装/模型验收，不宣称支持已通过 |
 | Gemini/OpenCode/其他 | portable 结构 | NOT_RUN | 不凭 manifest 推导实际支持 |
 | Codex CLI 0.147.0 | dev.5 portable + 生成 Codex 清单 | 公开 tag / 公开市场安装；七项技能；gpt-5.6-sol 实际 PDF 保存重开 | 当前实测，范围为原创夹具 |
-| ZCode | 生成 .zcode-plugin/plugin.json | 打包身份校验 | 加载/模型 NOT_RUN |
+| Claude Code | .claude-plugin/plugin.json + .mcp.json | 本地 CLI 清单校验 | 原生加载/模型 NOT_RUN |
 | Kimi Code | 生成 kimi.plugin.json | 打包身份校验 | 加载/模型 NOT_RUN |
 
 Codex `skills/list` 不等同插件组件列表；以 `plugin/read` 查看插件七项技能，加载名为 `printcraft:<技能名>`。界面清单由 scripts/generate_host_manifest.py 从根清单生成；不可手工漂移。

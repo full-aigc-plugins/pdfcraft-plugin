@@ -6,13 +6,25 @@
   "repository": "https://github.com/full-aigc-plugins/printcraft-plugin",
   "homepage": "https://github.com/full-aigc-plugins/printcraft-plugin",
   "interface": {
-    "displayName": "PrintCraft",
+    "displayName": "PdfCraft Use",
     "shortDescription": "PDF tasks with verified artifacts",
     "category": "Productivity",
     "capabilities": [
       "Read",
       "Write"
-    ]
+    ],
+    "logo": "./assets/official-logo.png",
+    "logoDark": "./assets/official-logo.png"
   },
-  "skills": "./skills/"
+  "skills": "./skills/",
+  "mcpServers": {
+    "printcraft-editor": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "ui/dist/adapter.mjs"
+      ],
+      "cwd": "./"
+    }
+  }
 }

@@ -5,6 +5,8 @@
   "license": "Apache-2.0",
   "repository": "https://github.com/full-aigc-plugins/printcraft-plugin",
   "homepage": "https://github.com/full-aigc-plugins/printcraft-plugin",
-  "displayName": "PrintCraft",
-  "skills": "./skills/"
+  "skills": "./skills/",
+  "displayName": "PdfCraft Use",
+  "icon": "./assets/official-logo.png",
+  "mcpServers": "./.mcp.json"
 }

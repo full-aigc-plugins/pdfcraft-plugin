@@ -7,13 +7,15 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "PrintCraft",
+        "displayName": "PdfCraft Use",
         "shortDescription": "PDF tasks with verified artifacts",
         "category": "Productivity",
         "capabilities": [
           "Read",
           "Write"
-        ]
+        ],
+        "logo": "./assets/official-logo.png",
+        "logoDark": "./assets/official-logo.png"
       }
     },
     "org.full-aigc.printcraft": {

@@ -7,12 +7,15 @@
   "homepage": "https://github.com/full-aigc-plugins/printcraft-plugin",
   "skills": "./skills/",
   "interface": {
-    "displayName": "PrintCraft",
+    "displayName": "PdfCraft Use",
     "shortDescription": "PDF tasks with verified artifacts",
     "category": "Productivity",
     "capabilities": [
       "Read",
       "Write"
-    ]
-  }
+    ],
+    "logo": "./assets/official-logo.png",
+    "logoDark": "./assets/official-logo.png"
+  },
+  "mcpServers": "./.codex-plugin/mcp.json"
 }
