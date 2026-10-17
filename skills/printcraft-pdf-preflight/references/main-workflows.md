@@ -1,6 +1,6 @@
 # PrintCraft main交付检查补充
 
-仅用于PdfCraft固定main `924c4da4ac2879ac9107c6c82e20ac6be5570f0a`或明确具备相同schema的新候选。实际原生工具目录为170项，相对稳定版163项新增7项，16处契约变化见[完整差异](main-command-delta.json)。这里的名称是MCP工具名，其JSON采用`input_schema`中的snake_case参数，不把它们当原始引擎command ID。新增统计/定向检查已通过Windows main专项39008588714：3字测试、重复页去重、未标记正文检出与输入摘要不变通过；不是完整无障碍认证。
+仅用于PdfCraft固定main `924c4da4ac2879ac9107c6c82e20ac6be5570f0a`或明确具备相同schema的新候选。实际原生工具目录为170项，相对稳定版163项新增7项，16处契约变化见[完整差异](main-command-delta.json)。这里的名称是MCP工具名，其JSON采用`input_schema`中的snake_case参数，不把它们当原始引擎command ID。新增统计/定向检查已通过Windows main专项39008588714：3个英文词测试、重复页去重、未标记正文检出与输入摘要不变通过；不是完整无障碍认证。
 
 ## 指定页统计与未标记内容检查
 
