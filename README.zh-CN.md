@@ -1,5 +1,10 @@
 # PdfCraft Use
 
+## Installable editor development candidate
+
+`0.1.0-dev.20261017.1` is distributed through the Full AIGC plugin marketplace as a development prerelease. Node.js 24 is required. Git installations use `ui/bootstrap.mjs` to download and verify the pinned editor archive on first start; complete release ZIPs also include that archive unpacked for offline startup. No Rust build or npm installation is required. Startup diagnostics use stderr; stdio remains MCP-only. The editor shares its session with Agent commands. Full creative quality and all-host embedded UI acceptance are still incomplete. Existing dated validation below describes its original version.
+
+
 预发布 **0.1.0-dev.6**，包含六项上游独立技能和一项插件本地 `printcraft-harness`。技能源快照逐文件绑定摘要，另有来源 suite 版本/摘要；`source-release.lock.json` 锁定真实技能源仓库、tag、commit、版本与 78 项文件摘要；`candidate-source.json` 保留为兼容快照登记，状态为 published-release。
 
 默认任务入口 **printcraft-use**，专业入口按名称显式调用；Harness 负责路由、状态和产物展示。Codex 加载后名称带插件命名空间，例如 `$printcraft:printcraft-cli-setup`。其他宿主尚未实际验收。

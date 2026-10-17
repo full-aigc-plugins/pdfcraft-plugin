@@ -1,17 +1,11 @@
 {
-  "currentVersion": "0.1.0-dev.6",
-  "releaseTag": "v0.1.0-dev.6",
-  "releaseCommit": "8b1091dced36b11c44dcaff108c9394555977831",
   "releaseStatus": "BLOCKED",
-  "distributionStatus": "PRERELEASE_PUBLISHED",
-  "blockingProductionGates": [
-    "Mobile phone/tablet delivery not run",
-    "Explicit external OCR only macOS arm64; native Chinese unsupported",
-    "Native PDF reading order/full-phrase search limitations; GUI reader not verified"
-  ],
-  "hostSupport": {
-    "Codex": "PASS_SCOPED_DEV_6_PUBLIC_INSTALL_AND_TWO_MODEL_OCR_TASKS_WITH_CONTEXT_WARNING",
-    "ZCode": "NOT_RUN",
-    "Kimi": "NOT_RUN"
-  }
+  "currentVersion": "0.1.0-dev.20261017.1",
+  "releaseTag": "v0.1.0-dev.20261017.1",
+  "installableDevelopmentCandidate": true,
+  "limitations": [
+    "Full creative/domain and all-host UI acceptance remains incomplete.",
+    "Production promotion is blocked; first Git launch requires network or an existing verified cache.",
+    "Web artifact versions are recorded independently; this release does not qualify every upstream main capability."
+  ]
 }
