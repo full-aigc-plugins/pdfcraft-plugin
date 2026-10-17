@@ -16,7 +16,7 @@
     },
     {
       "name": "printcraft-redact-pdf",
-      "sha256": "11864ad5cbe3efc14a5303690b54cff22f254dce122669260c9621d23379040f"
+      "sha256": "029494361a9becda401fbdb446f9987ddbe630d2c5a79f5fdc5890551ee8fc60"
     },
     {
       "name": "printcraft-compress-pdf",
@@ -24,11 +24,11 @@
     },
     {
       "name": "printcraft-fill-pdf-forms",
-      "sha256": "440e6b86ad8bdba8450248fbbfc11f0c6c9bf1bc637c97855eba6fadcf7979fc"
+      "sha256": "6ec01db2acb3a85a663e560390c8e9270792aa3f499300e704fbe1523439cd29"
     },
     {
       "name": "printcraft-pdf-preflight",
-      "sha256": "533a3378f545078814a3bb815c4fce0fb121d85df003c1f92181efef1a1e1126"
+      "sha256": "7dbd47ed60cc20bd664932aac6b368f8bd5088b97eea887d1ff32cbce0fa611e"
     }
   ]
 }
