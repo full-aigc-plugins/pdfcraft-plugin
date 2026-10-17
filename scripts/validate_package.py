@@ -1,5 +1,6 @@
 """作者端严格包校验；离线摘要完整性与远端发行证明分别报告。"""
 from pathlib import Path
+import runpy
 import hashlib
 import json
 import re
@@ -58,7 +59,8 @@ def validate():
     if managed!=provenance.get('skillFileSha256'):raise ValueError('snapshot_drift')
     if hashlib.sha256((ROOT/'upstream/skill-suite.json').read_bytes()).hexdigest()!=provenance.get('sourceSuiteSha256'):raise ValueError('source_suite_drift')
     names={p.name for p in (ROOT/'skills').iterdir() if p.is_dir() and p.name!='__pycache__'}
-    if names!=UPSTREAM|LOCAL:raise ValueError('skill_set_mismatch')
+    scenes=runpy.run_path(str(ROOT/'scripts/validate_editor_scenes.py'))['candidate_names'](ROOT)
+    if names!=UPSTREAM|LOCAL|scenes:raise ValueError('skill_set_mismatch')
     for name in names:
         text=(ROOT/'skills'/name/'SKILL.md').read_text()
         if f'name: {name}\n' not in text or len(text.splitlines())>=500:raise ValueError('skill_frontmatter_invalid')
@@ -66,10 +68,10 @@ def validate():
     if compat.exists():
         host=json.loads(compat.read_text())
         if host.get('name')!=manifest['name'] or host.get('version')!=manifest['version'] or host.get('skills')!='./skills/' or host.get('interface',{})!=interface:raise ValueError('host_manifest_drift')
-    for relative in ('.zcode-plugin/plugin.json','kimi.plugin.json'):
+    for relative in ('.claude-plugin/plugin.json','kimi.plugin.json'):
         path=ROOT/relative
         if not path.is_file() or path.is_symlink():raise ValueError('missing_or_unsafe_host_manifest')
         host=json.loads(path.read_text())
         if host.get('name')!=manifest['name'] or host.get('version')!=manifest['version'] or host.get('skills')!='./skills/':raise ValueError('host_manifest_drift')
-    return {'plugin':manifest['name'],'upstreamSkills':len(UPSTREAM),'localSkills':len(LOCAL),'skills':len(names),'snapshot':'PASS','sourceRelease':release,'remoteSourceVerification':'NOT_RUN','hostAcceptance':'NOT_RUN'}
+    return {'plugin':manifest['name'],'upstreamSkills':len(UPSTREAM),'localSkills':len(LOCAL|scenes),'skills':len(names),'snapshot':'PASS','sourceRelease':release,'remoteSourceVerification':'NOT_RUN','hostAcceptance':'NOT_RUN'}
 if __name__=='__main__':print(json.dumps(validate(),ensure_ascii=False))
