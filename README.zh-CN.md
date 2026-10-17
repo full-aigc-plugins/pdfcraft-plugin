@@ -59,3 +59,7 @@ Codex 为实测目标。Craft/Kimi 清单仅按 portable 元数据生成，加�
 插件展示使用上游官方图标；名称为 **PdfCraft Use**。图标来源与许可证保存在 `assets/official-icon-source.json` 和相邻 LICENSE 文件中。
 
 源码增强候选采用 `ui/source.lock.json` 与 `ui/build-source.py`；兼容更新查询本插件自有 GitHub Releases，失败回退内置，原版 Web 不替换增强自动化运行时。当前会话保留；宿主安装验收另行记录。
+
+## main交付检查候选
+
+新增[main工具指导](skills/printcraft-pdf-preflight/references/main-workflows.md)：所选页字数、未标记内容定位及7个新增工具/16处契约变化。新专项仍待执行；不等于完整无障碍认证，不改变既有中文表单外观限制。

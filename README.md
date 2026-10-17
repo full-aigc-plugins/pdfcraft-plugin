@@ -29,3 +29,7 @@ Explicit optional Tesseract Chinese OCR is available through Harness `ocr`; pinn
 Plugin display name: **PdfCraft Use**. Official upstream icon provenance and licenses are included under `assets/official-icon-source.json` and adjacent LICENSE files.
 
 源码增强候选采用 `ui/source.lock.json` 与 `ui/build-source.py`；兼容更新查询本插件自有 GitHub Releases，失败回退内置，原版 Web 不替换增强自动化运行时。当前会话保留；宿主安装验收另行记录。
+
+## main交付检查候选
+
+新增[main工具指导](skills/printcraft-pdf-preflight/references/main-workflows.md)：所选页字数、未标记内容定位及7个新增工具/16处契约变化。新专项仍待执行；不等于完整无障碍认证，不改变既有中文表单外观限制。

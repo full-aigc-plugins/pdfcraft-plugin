@@ -43,3 +43,7 @@ license: Apache-2.0
 ## 技能商店场景经验
 
 遇到文本与视觉双路核查时，读取[商店工作流适配](references/market-workflows.md)，使用对应的Craft方法和实际结果检查。上游技能不作为运行依赖。
+
+## main开发候选补充
+
+使用新候选统计指定页字数、查找未标记内容或检查表单标签时，读取[main新增工具与流程](references/main-workflows.md)。区分MCP工具名与引擎command ID，并检查实际工具schema；不把目录存在当作无障碍认证。
