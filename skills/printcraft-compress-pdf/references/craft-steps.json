@@ -22,17 +22,24 @@
       }
     },
     {
-      "purpose": "渲染代表页核对质量",
+      "purpose": "打开优化后的新输出，取得该文档新ID",
+      "command": "doc_open",
+      "params": {
+        "path": "output/optimized.pdf"
+      }
+    },
+    {
+      "purpose": "在新输出上渲染代表页，不检查原件冒充结果",
       "command": "page_render",
       "params": {
-        "doc": 1,
+        "doc": 2,
         "page": 1,
         "dpi": 144
       }
     }
   ],
   "check": "新进程重开优化结果，比较页数、文本可提取性、图片细节与文件大小。",
-  "boundary": "page_render例子仍指当前doc；检查新输出时必须重新doc_open取得新ID，不能看原件冒充输出。",
+  "boundary": "本例仅适用于全新CLI会话：首个doc_open为1、优化输出的第二个doc_open为2。宿主会话必须逐次读取真实返回doc，替换示例ID。优化并非保证缩小，需同时检查字数、页数、渲染与文件大小。",
   "templateOnly": true,
   "argumentPolicy": "示例参数必须按当前输入、选择和实际返回ID替换；$变量先解析，数组变量整字段替换，不能将本文件直接当原生CLI脚本执行。"
 }

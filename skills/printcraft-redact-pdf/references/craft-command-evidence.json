@@ -225,7 +225,31 @@
       },
       "name": "text_extract",
       "read_only": true
+    },
+    "doc_hidden_info": {
+      "command": null,
+      "description": "What Remove Hidden Information would remove, by category (metadata, attachments, comments, form-fields, hidden-text, hidden-layers, bookmarks, links-actions-scripts, private-data) with counts.",
+      "input_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "doc": {
+            "description": "Document id from doc_open or doc_list.",
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "doc"
+        ],
+        "type": "object"
+      },
+      "name": "doc_hidden_info",
+      "read_only": true
     }
   },
-  "sceneAcceptance": "NOT_RUN"
+  "sceneAcceptance": "NOT_RUN",
+  "additionalObservation": {
+    "runtime": "official pdfcraft-cli0.8.0 macOS universal",
+    "scope": "actual tools catalog; native example and full scene acceptance separate"
+  }
 }

@@ -4,11 +4,12 @@
 
 | 顺序与目的 | 实际方法 | 参数例子 |
 | --- | --- | --- |
-| 1. 标记已经确认需遮盖的字符串 | `redact_mark` | `{"doc":1,"find":"CONFIDENTIAL","whole_words":true}` |
-| 2. 核对标记后实际应用脱敏 | `redact_apply` | `{"doc":1}` |
-| 3. 审计内容移除结果 | `doc_audit_redactions` | `{"doc":1}` |
-| 4. 完整重写到新文件 | `doc_save` | `{"doc":1,"path":"output/redacted.pdf","full":true}` |
-| 5. 重新抽取文本核查残留 | `text_extract` | `{"doc":1}` |
+| 1. 检查隐藏信息，按已授权范围另行处理元数据/附件等残留 | `doc_hidden_info` | `{"doc":1}` |
+| 2. 标记已经确认需遮盖的字符串 | `redact_mark` | `{"doc":1,"find":"CONFIDENTIAL","whole_words":true}` |
+| 3. 核对标记后实际应用脱敏 | `redact_apply` | `{"doc":1}` |
+| 4. 审计内容移除结果 | `doc_audit_redactions` | `{"doc":1}` |
+| 5. 完整重写到新文件 | `doc_save` | `{"doc":1,"path":"output/redacted.pdf","full":true}` |
+| 6. 重新抽取文本核查残留 | `text_extract` | `{"doc":1}` |
 
 ## 如何调用
 
@@ -31,3 +32,7 @@ pdfcraft-cli run --script steps.json --root WORKSPACE。steps.json 是 [{"tool":
 保存可编辑工程后由新进程或重新打开的同一宿主会话核对；导出格式单独解码/查看。方法存在和零退出不代表本场景已经完成。
 
 工作流来源与许可见 [workflow-sources.json](workflow-sources.json)。仅借鉴事实与方法，本文与参数例子原创编写。
+
+## 本轮运行边界
+
+仅画黑框不算脱敏；find示例必须替换为实际授权范围，不误删相似非敏感内容。 doc_audit_redactions只审计假遮盖，不能证明所有元数据、附件、表单或像素内秘密都消失；隐藏信息须按已授权类别另行处理，不能无条件删除全部内容。

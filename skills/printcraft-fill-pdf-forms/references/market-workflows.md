@@ -15,7 +15,7 @@
 | 顺序 | Craft 实际方法 | 参数模板 |
 | --- | --- | --- |
 | 1 | `form_fields` | `{"doc":1}` |
-| 2 | `form_fill` | `{"doc":1,"values":{"CustomerName":"真实姓名"}}` |
+| 2 | `form_fill` | `{"doc":1,"values":{"CustomerName":"Sample Customer"}}` |
 | 3 | `doc_save` | `{"doc":1,"path":"output/filled.pdf","full":true}` |
 | 4 | `page_render` | `{"doc":1,"page":1,"dpi":144}` |
 
@@ -25,7 +25,7 @@
 
 原配方结果检查："重开核对字段值、复选框、长文本、字体和签名区域。"
 
-原配方限制：CustomerName必须由form_fields实际返回确认；填写不等于电子签名或身份认证。
+原配方限制：CustomerName必须由form_fields实际返回确认；填写不等于电子签名或身份认证。 此ASCII值是虚构测试输入，实际用户值不得转拼音或替换。官方0.8.0在本轮Helvetica表单的中文外观测试中显示????，虽字段存储值正确也不能验收中文外观；无可用中文字体能力时保留原件、明确未完成，并按用户确认选择其他后端。
 
 ## 版本与执行
 

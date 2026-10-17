@@ -22,6 +22,8 @@ license: Apache-2.0
 3. 逐步压缩，优先处理大图而非破坏文字。
 4. 比较体积、页数和典型细节。
 
+输出检查必须重新打开优化后的PDF，不能只渲染原件。
+
 ## 工具落地
 
 上游工具名属于 PdfCraft。doc_open/doc_create 返回 doc 句柄；后续 doc_info、doc_save、page_render 使用同一 doc。PDF 页号从 1 开始，参数以实际 schema 为准。

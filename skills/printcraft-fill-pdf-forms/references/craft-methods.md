@@ -5,7 +5,7 @@
 | 顺序与目的 | 实际方法 | 参数例子 |
 | --- | --- | --- |
 | 1. 读取真实字段名与类型 | `form_fields` | `{"doc":1}` |
-| 2. 按字段映射填写值 | `form_fill` | `{"doc":1,"values":{"CustomerName":"真实姓名"}}` |
+| 2. 按字段映射填写值 | `form_fill` | `{"doc":1,"values":{"CustomerName":"Sample Customer"}}` |
 | 3. 保存保留可编辑字段的副本 | `doc_save` | `{"doc":1,"path":"output/filled.pdf","full":true}` |
 | 4. 渲染表单页检查显示 | `page_render` | `{"doc":1,"page":1,"dpi":144}` |
 
@@ -30,3 +30,7 @@ pdfcraft-cli run --script steps.json --root WORKSPACE。steps.json 是 [{"tool":
 保存可编辑工程后由新进程或重新打开的同一宿主会话核对；导出格式单独解码/查看。方法存在和零退出不代表本场景已经完成。
 
 工作流来源与许可见 [workflow-sources.json](workflow-sources.json)。仅借鉴事实与方法，本文与参数例子原创编写。
+
+## 本轮运行边界
+
+CustomerName必须由form_fields实际返回确认；填写不等于电子签名或身份认证。 此ASCII值是虚构测试输入，实际用户值不得转拼音或替换。官方0.8.0在本轮Helvetica表单的中文外观测试中显示????，虽字段存储值正确也不能验收中文外观；无可用中文字体能力时保留原件、明确未完成，并按用户确认选择其他后端。

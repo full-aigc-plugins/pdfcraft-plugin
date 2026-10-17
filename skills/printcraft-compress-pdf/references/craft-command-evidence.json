@@ -118,7 +118,33 @@
       },
       "name": "page_render",
       "read_only": true
+    },
+    "doc_open": {
+      "command": "file.open",
+      "description": "Open a PDF file and return its document id, page count and whether it can be edited.",
+      "input_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "password": {
+            "description": "User or owner password for encrypted files.",
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "path"
+        ],
+        "type": "object"
+      },
+      "name": "doc_open",
+      "read_only": false
     }
   },
-  "sceneAcceptance": "NOT_RUN"
+  "sceneAcceptance": "NOT_RUN",
+  "additionalObservation": {
+    "runtime": "official pdfcraft-cli0.8.0 macOS universal",
+    "scope": "actual tools catalog; native example and full scene acceptance separate"
+  }
 }

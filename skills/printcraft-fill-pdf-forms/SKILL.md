@@ -22,6 +22,8 @@ license: Apache-2.0
 3. 填写后检查多行文本、字体及勾选状态。
 4. 按要求保留可编辑字段或输出扁平副本。
 
+字段值与显示外观必须分别验收。当前官方0.8.0在Helvetica表单填写中文时有外观显示为????的已复现限制，不能把存储成功当作中文填写完成。
+
 ## 工具落地
 
 上游工具名属于 PdfCraft。doc_open/doc_create 返回 doc 句柄；后续 doc_info、doc_save、page_render 使用同一 doc。PDF 页号从 1 开始，参数以实际 schema 为准。

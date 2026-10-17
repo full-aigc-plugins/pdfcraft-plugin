@@ -8,23 +8,23 @@
     },
     {
       "name": "printcraft-organize-pdf",
-      "sha256": "266dea4e34f55d6e89e6642cc89ed260c52d8f96e225fc4639e107d06be55685"
+      "sha256": "03a523e51be58fcf089fb9830aa0822415791a2e08171c87628b0951a9a343f6"
     },
     {
       "name": "printcraft-ocr-scans",
-      "sha256": "cb80b85bf9af54d346ac36277d046d854595674d116afe3289087a87877e2a98"
+      "sha256": "2809a325a662f8ce1fca87916999ce239a3dcccb539587062bad390c4ea78357"
     },
     {
       "name": "printcraft-redact-pdf",
-      "sha256": "029494361a9becda401fbdb446f9987ddbe630d2c5a79f5fdc5890551ee8fc60"
+      "sha256": "4e31c55151ecb030fa6dbb7cb0b1da719970356117bb213657d452b4e5cab6b9"
     },
     {
       "name": "printcraft-compress-pdf",
-      "sha256": "e72fd4f20af4473dd5a23924f75cbc89444799323cea2c79fcce20763fa16631"
+      "sha256": "05891880c2e8c8cfad826f943292d93075e535f5ae013593cc789af2e81ef7dd"
     },
     {
       "name": "printcraft-fill-pdf-forms",
-      "sha256": "6ec01db2acb3a85a663e560390c8e9270792aa3f499300e704fbe1523439cd29"
+      "sha256": "728a70f58866a00e7ac43a5b2da400916fed57c37ee6006e4fd36af6df2f6f1b"
     },
     {
       "name": "printcraft-pdf-preflight",

@@ -30,3 +30,9 @@ pdfcraft-cli run --script steps.json --root WORKSPACE。steps.json 是 [{"tool":
 保存可编辑工程后由新进程或重新打开的同一宿主会话核对；导出格式单独解码/查看。方法存在和零退出不代表本场景已经完成。
 
 工作流来源与许可见 [workflow-sources.json](workflow-sources.json)。仅借鉴事实与方法，本文与参数例子原创编写。
+
+## 本轮运行边界
+
+当前官方0.8.0 schema语言枚举仅en；中文不能用en假装已支持，需另接实际可用中文后端。 先检查ocr_status.available；缺模型时仅在已授权范围配置PDFCRAFT_MODELS到模型目录，再复查状态；不得把原有可选文字页的skip结果当作OCR成功。模型来源与SHA256见方法手册。
+
+模型地址、哈希和CC-BY-SA-4.0许可信息见[官方模型来源](ocr-models.json)。使用运行时配置的模型目录，不改全局环境；模型存在后仍应由当前ocr_status及图像页识别结果确认。

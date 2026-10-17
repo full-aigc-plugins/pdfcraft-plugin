@@ -6,7 +6,8 @@
 | --- | --- | --- |
 | 1. 核对原件页数与结构 | `doc_info` | `{"doc":1}` |
 | 2. 清除冗余缩略图并优化到新文件 | `doc_optimize` | `{"doc":1,"path":"output/optimized.pdf","discard_thumbnails":true,"flate_unencoded":true}` |
-| 3. 渲染代表页核对质量 | `page_render` | `{"doc":1,"page":1,"dpi":144}` |
+| 3. 打开优化后的新输出，取得该文档新ID | `doc_open` | `{"path":"output/optimized.pdf"}` |
+| 4. 在新输出上渲染代表页，不检查原件冒充结果 | `page_render` | `{"doc":2,"page":1,"dpi":144}` |
 
 ## 如何调用
 
@@ -29,3 +30,7 @@ pdfcraft-cli run --script steps.json --root WORKSPACE。steps.json 是 [{"tool":
 保存可编辑工程后由新进程或重新打开的同一宿主会话核对；导出格式单独解码/查看。方法存在和零退出不代表本场景已经完成。
 
 工作流来源与许可见 [workflow-sources.json](workflow-sources.json)。仅借鉴事实与方法，本文与参数例子原创编写。
+
+## 本轮运行边界
+
+本例仅适用于全新CLI会话：首个doc_open为1、优化输出的第二个doc_open为2。宿主会话必须逐次读取真实返回doc，替换示例ID。优化并非保证缩小，需同时检查字数、页数、渲染与文件大小。

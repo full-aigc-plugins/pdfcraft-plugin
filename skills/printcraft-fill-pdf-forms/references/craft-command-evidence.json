@@ -120,5 +120,9 @@
       "read_only": true
     }
   },
-  "sceneAcceptance": "NOT_RUN"
+  "sceneAcceptance": "NOT_RUN",
+  "additionalObservation": {
+    "runtime": "official pdfcraft-cli0.8.0 macOS universal",
+    "scope": "actual tools catalog; native example and full scene acceptance separate"
+  }
 }

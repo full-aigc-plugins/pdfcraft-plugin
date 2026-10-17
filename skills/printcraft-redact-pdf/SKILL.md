@@ -22,6 +22,8 @@ license: Apache-2.0
 3. 检查文本层、注释、附件和元数据是否仍含内容。
 4. 重开输出并尝试搜索、复制及提取目标文字。
 
+内容删除、假遮盖审计和隐藏信息检查分别核对；需要处理元数据或附件时按用户授权范围操作。
+
 ## 工具落地
 
 上游工具名属于 PdfCraft。doc_open/doc_create 返回 doc 句柄；后续 doc_info、doc_save、page_render 使用同一 doc。PDF 页号从 1 开始，参数以实际 schema 为准。

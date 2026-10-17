@@ -43,7 +43,7 @@
     }
   ],
   "check": "抽查姓名、数字和表格顺序，检查识别文字与图像位置。",
-  "boundary": "当前官方0.8.0 schema语言枚举仅en；中文不能用en假装已支持，需另接实际可用中文后端。",
+  "boundary": "当前官方0.8.0 schema语言枚举仅en；中文不能用en假装已支持，需另接实际可用中文后端。 先检查ocr_status.available；缺模型时仅在已授权范围配置PDFCRAFT_MODELS到模型目录，再复查状态；不得把原有可选文字页的skip结果当作OCR成功。模型来源与SHA256见方法手册。",
   "templateOnly": true,
   "argumentPolicy": "示例参数必须按当前输入、选择和实际返回ID替换；$变量先解析，数组变量整字段替换，不能将本文件直接当原生CLI脚本执行。"
 }

@@ -14,11 +14,12 @@
 
 | 顺序 | Craft 实际方法 | 参数模板 |
 | --- | --- | --- |
-| 1 | `redact_mark` | `{"doc":1,"find":"CONFIDENTIAL","whole_words":true}` |
-| 2 | `redact_apply` | `{"doc":1}` |
-| 3 | `doc_audit_redactions` | `{"doc":1}` |
-| 4 | `doc_save` | `{"doc":1,"path":"output/redacted.pdf","full":true}` |
-| 5 | `text_extract` | `{"doc":1}` |
+| 1 | `doc_hidden_info` | `{"doc":1}` |
+| 2 | `redact_mark` | `{"doc":1,"find":"CONFIDENTIAL","whole_words":true}` |
+| 3 | `redact_apply` | `{"doc":1}` |
+| 4 | `doc_audit_redactions` | `{"doc":1}` |
+| 5 | `doc_save` | `{"doc":1,"path":"output/redacted.pdf","full":true}` |
+| 6 | `text_extract` | `{"doc":1}` |
 
 检查：敏感内容不可再从文本层提取，未目标文本仍在，审计无遗留项。
 
@@ -26,7 +27,7 @@
 
 原配方结果检查："新进程重开后搜索目标词、复制文字、检查元数据与图像内敏感内容。"
 
-原配方限制：仅画黑框不算脱敏；find示例必须替换为实际授权范围，不误删相似非敏感内容。
+原配方限制：仅画黑框不算脱敏；find示例必须替换为实际授权范围，不误删相似非敏感内容。 doc_audit_redactions只审计假遮盖，不能证明所有元数据、附件、表单或像素内秘密都消失；隐藏信息须按已授权类别另行处理，不能无条件删除全部内容。
 
 ## 版本与执行
 

@@ -22,6 +22,8 @@ license: Apache-2.0
 3. 仅在当前后端具备所需语言模型时执行识别。
 4. 抽查姓名、数字和表格，保留原图与识别层。
 
+识别前确认ocr_status.available和实际语言范围；缺模型、跳过已有文字页都不算实际扫描识别成功。
+
 ## 工具落地
 
 上游工具名属于 PdfCraft。doc_open/doc_create 返回 doc 句柄；后续 doc_info、doc_save、page_render 使用同一 doc。PDF 页号从 1 开始，参数以实际 schema 为准。
