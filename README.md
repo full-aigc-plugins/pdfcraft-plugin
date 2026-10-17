@@ -1,6 +1,6 @@
 # PdfCraft Use
 
-当前可安装开发候选：`0.1.0-dev.20261017.5`。补齐官方输入框图标，Codex市场使用完整薄包快照以在安装前读取列表图标；运行资源沿用已核验的dev.20261017.2，不代表上游引擎升级或全部创作验收通过。
+当前开发候选：`0.1.0-dev.20261017.6`。新增六类PDF交付场景；Codex市场使用完整薄包快照以在安装前读取官方图标。运行资源沿用已核验的dev.20261017.2，不代表引擎升级或全部创作验收通过。
 
 ## Installable editor development candidate
 
@@ -71,4 +71,4 @@ Plugin display name: **PdfCraft Use**. Official upstream icon provenance and lic
 | `printcraft-linked-agenda` | 议程与附录双向内部跳转，核对热点和目标页 |
 | `printcraft-revision-compare` | 对照新旧PDF生成文字差异报告，保留两个原件 |
 
-本批为开发分支场景，未进入当前订阅市场v5。当前后端工具缺失时如实报告，不将示例ID、页号和坐标直接套用真实文件。
+本批作为开发候选集成，实际安装版本以市场条目和对应发布标签为准。当前后端工具缺失时如实报告，不将示例ID、页号和坐标直接套用真实文件。
