@@ -32,4 +32,4 @@ Plugin display name: **PdfCraft Use**. Official upstream icon provenance and lic
 
 ## main交付检查候选
 
-新增[main工具指导](skills/printcraft-pdf-preflight/references/main-workflows.md)：所选页字数、未标记内容定位及7个新增工具/16处契约变化。新专项仍待执行；不等于完整无障碍认证，不改变既有中文表单外观限制。
+新增[main工具指导](skills/printcraft-pdf-preflight/references/main-workflows.md)：所选页字数、未标记内容定位及7个新增工具/16处契约变化。新增统计/定向检查已通过Windows main专项39008588714；不等于完整无障碍认证，不改变既有中文表单外观限制。

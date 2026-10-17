@@ -2005,5 +2005,14 @@
   "upstreamCommit": "924c4da4ac2879ac9107c6c82e20ac6be5570f0a",
   "observedNativeRun": 39007949879,
   "catalogKind": "native MCP tools, not raw engine commands",
-  "runtimeValidation": "existing six workflows executed; new statistics/focused accessibility check pending"
+  "runtimeValidation": "new mapped main checks PASS; other added commands and installed host sync not inferred",
+  "mainWorkflowRun": 39008588714,
+  "validatedSkillsCommit": "4999ae4d873f9085dac1a9ee052fa318bfc191e2",
+  "mainCapabilities": {
+    "unicodeWordCountAndPageDedup": "PASS",
+    "untaggedContentFound": "PASS",
+    "sourceUnchanged": "PASS",
+    "fullAccessibilityCertification": "NOT_TESTED",
+    "installedHostSync": "NOT_TESTED"
+  }
 }
