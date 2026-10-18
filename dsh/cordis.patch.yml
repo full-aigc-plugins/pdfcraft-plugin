@@ -8,7 +8,7 @@
 
     - id: mcp-printcraft-printcraft-editor
       name: '@deepseek-ai/dsh-mcp-client'
-      disabled: !!js "!process.env.DSH_MCP_PRINTCRAFT"
+      disabled: !!js "process.env.DSH_MCP_PRINTCRAFT === '0'"
       config:
         serverName: "printcraft-editor"
         toolCallTimeoutMs: 60000
