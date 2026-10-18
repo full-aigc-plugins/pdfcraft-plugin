@@ -3,12 +3,12 @@ const pending=new WeakMap();
 export function needsFormRefresh(name,result){return name==='form_fill' && !result?.isError;}
 export function refreshFormFrame(frame,schedule=requestAnimationFrame){
  if(pending.has(frame))return pending.get(frame);
- const height=frame.getBoundingClientRect().height;
- if(height<2)return Promise.resolve();
- const previous=frame.style.height;
+ const width=frame.getBoundingClientRect().width;
+ if(width<2)return Promise.resolve();
+ const previous=frame.style.width;
  const task=new Promise(resolve=>{
-  frame.style.height=`${height-1}px`;
-  schedule(()=>schedule(()=>{frame.style.height=previous;pending.delete(frame);resolve();}));
+  frame.style.width=`${width-1}px`;
+  schedule(()=>schedule(()=>{frame.style.width=previous;pending.delete(frame);resolve();}));
  });
  pending.set(frame,task);return task;
 }
