@@ -13,7 +13,7 @@ This plugin belongs to **AIGC content creation**.
 
 > Inspect, edit, OCR, and deliver PDFs from a coding agent, with a pinned native CLI, session-bound plans, and review gates that keep uncertain results uncertain.
 
-[![Version](https://img.shields.io/badge/release-0.1.0--dev.20261018.2-1A73E8)](#positioning)
+[![Version](https://img.shields.io/badge/release-0.1.0--dev.20261019.1-1A73E8)](#positioning)
 [![Skills](https://img.shields.io/badge/skills-20-00A67E)](#skills)
 [![MCP servers](https://img.shields.io/badge/MCP%20servers-1-6E56CF)](#mcp-tools)
 [![License](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
