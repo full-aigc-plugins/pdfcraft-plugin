@@ -13,7 +13,7 @@
 
 > 在编码智能体里完成 PDF 检查、编辑、OCR 与交付：原生 CLI 版本固定、计划与会话绑定、结果不明时保持不明，零退出也必须过验收。
 
-[![版本](https://img.shields.io/badge/release-0.1.0--dev.20261018.2-1A73E8)](#项目定位)
+[![版本](https://img.shields.io/badge/release-0.1.0--dev.20261019.1-1A73E8)](#项目定位)
 [![技能](https://img.shields.io/badge/skills-20-00A67E)](#技能)
 [![MCP 服务器](https://img.shields.io/badge/MCP%20servers-1-6E56CF)](#mcp-工具)
 [![许可证](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
