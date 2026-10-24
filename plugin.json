@@ -2,13 +2,13 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "pdfcraft",
   "version": "0.1.0-dev.20261024.1",
-  "description": "Page reordering, OCR for scans, form filling, redaction and preflight. Originals are preserved and every page is checked for order, geometry and searchable text.",
+  "description": "页面重排、扫描件 OCR、表单填写、内容脱敏与印前检查；保留原件，逐页核对顺序、几何与可搜索文本。",
   "license": "Apache-2.0",
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "PdfCraft · PDF Toolkit",
-        "shortDescription": "Page cleanup, OCR, forms, redaction and preflight",
+        "displayName": "PdfCraft（PDF 处理）",
+        "shortDescription": "页面整理、OCR、表单、脱敏与印前检查",
         "category": "Productivity",
         "capabilities": [
           "Read",
