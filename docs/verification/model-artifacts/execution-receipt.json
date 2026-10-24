@@ -1,38 +1,38 @@
 {
-  "protocol": "printcraft.execution/1",
+  "protocol": "pdfcraft.execution/1",
   "runId": "be46333c-f04d-4573-8c1e-d1d0048a5f84",
-  "runRegistry": "/tmp/printcraft-acceptance/宿主 测试/model-pdf-current/.printcraft-runs",
+  "runRegistry": "/tmp/pdfcraft-acceptance/宿主 测试/model-pdf-current/.pdfcraft-runs",
   "attempted": true,
   "authorizedScope": [],
   "expectedOutputs": [
     {
-      "path": "/tmp/printcraft-acceptance/宿主 测试/model-pdf-current/result.pdf",
+      "path": "/tmp/pdfcraft-acceptance/宿主 测试/model-pdf-current/result.pdf",
       "role": "delivery",
       "mediaType": "application/pdf"
     }
   ],
   "documentIdsReusable": false,
   "stepsTransactional": false,
-  "domain": "printcraft",
+  "domain": "pdfcraft",
   "status": "NATIVE_EXIT_ZERO_REVIEW_REQUIRED",
   "argv": [
     "/opt/homebrew/opt/python@3.14/bin/python3.14",
     "-I",
     "-B",
-    "/private/tmp/printcraft-acceptance/宿主 测试/codex-cache/plugins/cache/printcraft-local-validation/printcraft/0.1.0-dev.2/skills/printcraft-use/scripts/cli.py",
+    "/private/tmp/pdfcraft-acceptance/宿主 测试/codex-cache/plugins/cache/pdfcraft-local-validation/pdfcraft/0.1.0-dev.2/skills/pdfcraft-use/scripts/cli.py",
     "--runtime-home",
-    "/tmp/printcraft-acceptance/隔离 runtime",
+    "/tmp/pdfcraft-acceptance/隔离 runtime",
     "--",
     "run",
     "--script",
-    "/tmp/printcraft-acceptance/宿主 测试/model-pdf-current/task/native-plan.json"
+    "/tmp/pdfcraft-acceptance/宿主 测试/model-pdf-current/task/native-plan.json"
   ],
   "catalogSha256": "2cef688df408f49c80db4a9765d0d563baf8f430bb338fc584e0c0e235f54878",
   "planSha256": "ee2d348684c873ef56c800899729d0c4eaa565c000ffa2ff50f0e346f58748bb",
   "automaticReplay": false,
   "completeAcceptance": false,
   "inputSha256": {
-    "/tmp/printcraft-acceptance/native-final-2/source.pdf": "9d035b63e05cfeb06b0985db1582f14185f99931a51eda69718764e91fdc0a0a"
+    "/tmp/pdfcraft-acceptance/native-final-2/source.pdf": "9d035b63e05cfeb06b0985db1582f14185f99931a51eda69718764e91fdc0a0a"
   },
   "runtimeLockSha256": "7db3b75e565e2a4da83118875e1ada8652913f670c401b4f60173af3f1547462",
   "skillResourceSha256": {
@@ -47,21 +47,21 @@
   "phase": "native-exited",
   "exitCode": 0,
   "runtimeIdentity": {
-    "executable": "/tmp/printcraft-acceptance/隔离 runtime/printcraft/0.2.1/printcraft-cli",
+    "executable": "/tmp/pdfcraft-acceptance/隔离 runtime/pdfcraft/0.2.1/pdfcraft-cli",
     "binarySha256": "b7783b596870ed5a326f29456d4647382d2e1e4d7b7ffe75ded192cd15b86995",
     "version": "0.2.1",
     "platform": "darwin-arm64",
-    "versionOutput": "printcraft-cli 0.2.1",
-    "artifact": "printcraft-cli"
+    "versionOutput": "pdfcraft-cli 0.2.1",
+    "artifact": "pdfcraft-cli"
   },
   "descendantsConfirmedStopped": false,
-  "stdout": "{\n  \"dirty\": false,\n  \"doc\": 1,\n  \"editable\": true,\n  \"encrypted\": false,\n  \"name\": \"source.pdf\",\n  \"pages\": 3,\n  \"path\": \"/tmp/printcraft-acceptance/native-final-2/source.pdf\",\n  \"read_only_reason\": null,\n  \"redo\": null,\n  \"undo\": null\n}\n{\n  \"dirty\": true,\n  \"doc\": 1,\n  \"editable\": true,\n  \"encrypted\": false,\n  \"name\": \"source.pdf\",\n  \"pages\": 3,\n  \"path\": \"/tmp/printcraft-acceptance/native-final-2/source.pdf\",\n  \"read_only_reason\": null,\n  \"redo\": null,\n  \"undo\": \"Move page\"\n}\n{\n  \"bytes\": 919,\n  \"document\": {\n    \"dirty\": false,\n    \"doc\": 1,\n    \"editable\": true,\n    \"encrypted\": false,\n    \"name\": \"result.pdf\",\n    \"pages\": 3,\n    \"path\": \"/tmp/printcraft-acceptance/宿主 测试/model-pdf-current/result.pdf\",\n    \"read_only_reason\": null,\n    \"redo\": null,\n    \"undo\": \"Move page\"\n  },\n  \"incremental\": false,\n  \"path\": \"/tmp/printcraft-acceptance/宿主 测试/model-pdf-current/result.pdf\"\n}\n",
+  "stdout": "{\n  \"dirty\": false,\n  \"doc\": 1,\n  \"editable\": true,\n  \"encrypted\": false,\n  \"name\": \"source.pdf\",\n  \"pages\": 3,\n  \"path\": \"/tmp/pdfcraft-acceptance/native-final-2/source.pdf\",\n  \"read_only_reason\": null,\n  \"redo\": null,\n  \"undo\": null\n}\n{\n  \"dirty\": true,\n  \"doc\": 1,\n  \"editable\": true,\n  \"encrypted\": false,\n  \"name\": \"source.pdf\",\n  \"pages\": 3,\n  \"path\": \"/tmp/pdfcraft-acceptance/native-final-2/source.pdf\",\n  \"read_only_reason\": null,\n  \"redo\": null,\n  \"undo\": \"Move page\"\n}\n{\n  \"bytes\": 919,\n  \"document\": {\n    \"dirty\": false,\n    \"doc\": 1,\n    \"editable\": true,\n    \"encrypted\": false,\n    \"name\": \"result.pdf\",\n    \"pages\": 3,\n    \"path\": \"/tmp/pdfcraft-acceptance/宿主 测试/model-pdf-current/result.pdf\",\n    \"read_only_reason\": null,\n    \"redo\": null,\n    \"undo\": \"Move page\"\n  },\n  \"incremental\": false,\n  \"path\": \"/tmp/pdfcraft-acceptance/宿主 测试/model-pdf-current/result.pdf\"\n}\n",
   "stderr": "",
   "pid": 27983,
   "startedAt": 1791453897.548022,
   "finishedAt": 1791453897.56144,
   "inputAfterSha256": {
-    "/tmp/printcraft-acceptance/native-final-2/source.pdf": "9d035b63e05cfeb06b0985db1582f14185f99931a51eda69718764e91fdc0a0a"
+    "/tmp/pdfcraft-acceptance/native-final-2/source.pdf": "9d035b63e05cfeb06b0985db1582f14185f99931a51eda69718764e91fdc0a0a"
   },
   "skillResourceAfterSha256": {
     "bootstrap.py": "f2f0901641c2ca58d48a00bc2e16d1095ee0e3b0d322279ef3c5edee136e745c",
@@ -74,7 +74,7 @@
   },
   "artifacts": [
     {
-      "path": "/tmp/printcraft-acceptance/宿主 测试/model-pdf-current/result.pdf",
+      "path": "/tmp/pdfcraft-acceptance/宿主 测试/model-pdf-current/result.pdf",
       "role": "delivery",
       "mediaType": "application/pdf",
       "status": "PRESENT",

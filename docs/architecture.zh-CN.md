@@ -9,8 +9,8 @@ PrintCraft使用原生JSON Schema；LightCraft、DesignCraft保留参数说明�
 OpenSpec优化规范已建立；实现及原生安装验收仍待完成。尚未创建Git仓库或远端发行。已有五套仍使用原OpenSpec；三领域的ArtCraft公共协议映射、依赖交接、返工和移动交付仍未接入。
 
 
-安装锁现在绑定发行标签、归档名、二进制身份与版本；不一致时在创建运行时目录前拒绝。当前所有三领域真实固定发行仍为0.2.1。上游产品源码已改名PdfCraft，技能名和计划domain继续保留printcraft；安装器分别支持printcraft-cli与pdfcraft-cli，不移动旧运行时，当前发行锁保持printcraft-cli 0.2.1。
+安装锁现在绑定发行标签、归档名、二进制身份与版本；不一致时在创建运行时目录前拒绝。当前所有三领域真实固定发行仍为0.2.1。上游产品源码已改名PdfCraft，技能名和计划domain继续保留pdfcraft；安装器分别支持pdfcraft-cli与pdfcraft-cli，不移动旧运行时，当前发行锁保持pdfcraft-cli 0.2.1。
 
 ## 优化规格与任务
 
-已建立 OpenSpec 变更 [harden-printcraft-plugin-delivery](../openspec/changes/harden-printcraft-plugin-delivery/proposal.md)，见[设计](../openspec/changes/harden-printcraft-plugin-delivery/design.md)与[任务](../openspec/changes/harden-printcraft-plugin-delivery/tasks.md)。当前仅完成规格编写；实现、原生、宿主及发布门禁保持未完成。
+已建立 OpenSpec 变更 [harden-pdfcraft-plugin-delivery](../openspec/changes/harden-pdfcraft-plugin-delivery/proposal.md)，见[设计](../openspec/changes/harden-pdfcraft-plugin-delivery/design.md)与[任务](../openspec/changes/harden-pdfcraft-plugin-delivery/tasks.md)。当前仅完成规格编写；实现、原生、宿主及发布门禁保持未完成。

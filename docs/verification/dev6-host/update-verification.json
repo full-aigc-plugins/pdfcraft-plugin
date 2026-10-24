@@ -1,19 +1,19 @@
 {
   "status": "PASS_PUBLIC_TAG_DEV5_TO_DEV6_CONTROLLED_LOCAL_MARKET_INDEX",
   "old": {
-    "pluginId": "printcraft@printcraft-dev6-durable-update",
-    "name": "printcraft",
-    "marketplaceName": "printcraft-dev6-durable-update",
+    "pluginId": "pdfcraft@pdfcraft-dev6-durable-update",
+    "name": "pdfcraft",
+    "marketplaceName": "pdfcraft-dev6-durable-update",
     "version": "0.1.0-dev.5",
-    "installedPath": "/Users/wandl/workspaces/workspace-agent-skills/evaluation-results/printcraft-dev6-host/update-home/plugins/cache/printcraft-dev6-durable-update/printcraft/0.1.0-dev.5",
+    "installedPath": "/Users/wandl/workspaces/workspace-agent-skills/evaluation-results/pdfcraft-dev6-host/update-home/plugins/cache/pdfcraft-dev6-durable-update/pdfcraft/0.1.0-dev.5",
     "authPolicy": "ON_USE"
   },
   "new": {
-    "pluginId": "printcraft@printcraft-dev6-durable-update",
-    "name": "printcraft",
-    "marketplaceName": "printcraft-dev6-durable-update",
+    "pluginId": "pdfcraft@pdfcraft-dev6-durable-update",
+    "name": "pdfcraft",
+    "marketplaceName": "pdfcraft-dev6-durable-update",
     "version": "0.1.0-dev.6",
-    "installedPath": "/Users/wandl/workspaces/workspace-agent-skills/evaluation-results/printcraft-dev6-host/update-home/plugins/cache/printcraft-dev6-durable-update/printcraft/0.1.0-dev.6",
+    "installedPath": "/Users/wandl/workspaces/workspace-agent-skills/evaluation-results/pdfcraft-dev6-host/update-home/plugins/cache/pdfcraft-dev6-durable-update/pdfcraft/0.1.0-dev.6",
     "authPolicy": "ON_USE"
   },
   "admission": {

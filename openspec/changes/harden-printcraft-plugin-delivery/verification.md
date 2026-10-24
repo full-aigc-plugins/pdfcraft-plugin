@@ -3,8 +3,8 @@
 日期：2026-10-08（Asia/Shanghai）。范围：本次规格与任务交付，不是实现验收。
 
 - 工具：项目目录实际 OpenSpec CLI 1.8.0；使用 `init --tools none --no-animation`，没有安装宿主 Skills 或升级 CLI。
-- `openspec validate harden-printcraft-plugin-delivery --strict`：PASS。
-- `openspec status --change harden-printcraft-plugin-delivery --json`：四类规划产物均 done。其 isComplete 只表示规划产物完整，不能解释为实施完成。
+- `openspec validate harden-pdfcraft-plugin-delivery --strict`：PASS。
+- `openspec status --change harden-pdfcraft-plugin-delivery --json`：四类规划产物均 done。其 isComplete 只表示规划产物完整，不能解释为实施完成。
 - 3 个能力规范、10 条需求、20 个场景、24 个未勾选任务；需求编号均在任务中有对应，编号无重复。
 - 新变更及更新入口文档的相对链接检查：PASS。
 - `python3 -I -B scripts/validate_package.py`：PASS；原生与宿主状态仍 NOT_RUN。

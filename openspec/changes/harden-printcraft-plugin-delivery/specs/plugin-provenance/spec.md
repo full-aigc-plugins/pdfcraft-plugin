@@ -6,7 +6,7 @@
 
 ### Requirement: PP-01 候选与正式来源身份
 
-系统 SHALL 分别验证候选与正式锁：候选 sourceProject 必须为 printcraft-skills、sourceVersion 与对应来源一致、releaseTag 必须为空；正式来源须有可核验仓库、版本/tag、commit 与文件摘要，版本映射策略显式声明。
+系统 SHALL 分别验证候选与正式锁：候选 sourceProject 必须为 pdfcraft-skills、sourceVersion 与对应来源一致、releaseTag 必须为空；正式来源须有可核验仓库、版本/tag、commit 与文件摘要，版本映射策略显式声明。
 
 #### Scenario: 伪造候选身份
 
@@ -29,7 +29,7 @@
 
 #### Scenario: 合法 Harness 或未知文件
 
-- **WHEN** 加入声明的 printcraft-harness 或未声明技能
+- **WHEN** 加入声明的 pdfcraft-harness 或未声明技能
 - **THEN** 白名单 Harness 与上游快照分别校验；未声明项、缺失项、链接及摘要漂移均拒绝。
 
 ### Requirement: PP-03 源码优先的保护性同步

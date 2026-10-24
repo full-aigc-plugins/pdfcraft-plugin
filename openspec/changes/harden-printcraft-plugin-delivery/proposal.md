@@ -24,7 +24,7 @@
 
 涉及 plugin.json、candidate-source.json、后续正式来源锁/本地技能白名单、宿主兼容清单、插件本地 Harness、scripts/、tests/、docs/。现有 36 个上游技能文件继续由技能源维护；不得在插件中分叉修改。
 
-依赖：full-aigc-skills-repositories/printcraft-skills 的 `harden-printcraft-skill-execution`，特别是 execution-lifecycle、pdf-delivery-verification 和 acceptance-evidence。插件不得自行改写其回执、超时或 PDF 验收含义。
+依赖：full-aigc-skills-repositories/pdfcraft-skills 的 `harden-pdfcraft-skill-execution`，特别是 execution-lifecycle、pdf-delivery-verification 和 acceptance-evidence。插件不得自行改写其回执、超时或 PDF 验收含义。
 
 本次仅写规格和任务，不运行 apply/sync/archive，不安装宿主插件、不初始化 Git、不创建远端、不发布。能力实现和验证完成前所有任务保持开放。
 
