@@ -6,7 +6,7 @@
   "repository": "https://github.com/full-aigc-plugins/printcraft-plugin",
   "homepage": "https://github.com/full-aigc-plugins/printcraft-plugin",
   "skills": "./skills/",
-  "displayName": "PrintCraft · PDF Toolkit",
+  "displayName": "PdfCraft · PDF Toolkit",
   "icon": "./assets/official-logo.png",
   "mcpServers": {
     "printcraft-editor": {
@@ -23,15 +23,15 @@
     }
   },
   "displayName_i18n": {
-    "en": "PrintCraft · PDF Toolkit"
+    "en": "PdfCraft · PDF Toolkit"
   },
   "ui": {
     "surfaces": [
       {
         "id": "editor",
         "title": {
-          "en-US": "PrintCraft · PDF Toolkit",
-          "zh-CN": "PrintCraft · PDF 处理"
+          "en-US": "PdfCraft · PDF Toolkit",
+          "zh-CN": "PdfCraft · PDF 处理"
         },
         "icon": "file-text",
         "server": "printcraft-editor",
