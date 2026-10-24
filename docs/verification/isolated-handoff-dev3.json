@@ -1,6 +1,6 @@
 [
   {
-    "project": "printcraft-skills",
+    "project": "pdfcraft-skills",
     "version": "0.1.0-dev.3",
     "exitCode": 0,
     "stdout": "",
@@ -8,7 +8,7 @@
     "siblingsPresent": false
   },
   {
-    "project": "printcraft-plugin",
+    "project": "pdfcraft-plugin",
     "version": "0.1.0-dev.3",
     "exitCode": 0,
     "stdout": "",

@@ -1,5 +1,5 @@
 {
-  "protocol": "printcraft.plugin-ocr-evidence/1",
+  "protocol": "pdfcraft.plugin-ocr-evidence/1",
   "sourceTag": "v0.1.0-dev.6",
   "packages": {
     "plugin-real.zip": {

@@ -1,5 +1,5 @@
 {
-  "name": "printcraft-plugin",
+  "name": "pdfcraft-plugin",
   "version": "0.1.0-dev.20261019.1",
   "private": true,
   "type": "module",

@@ -8,7 +8,7 @@
 
 ## Positioning
 
-PdfCraft is for users who need a PDF actually processed, not a generated script. It does not reimplement a PDF engine. It pins and verifies `printcraft-cli` 0.2.1 and combines 20 skills with a thin Harness for inspection, page operations, forms, redaction, OCR, bookmarks, print preflight, and an embedded editor.
+PdfCraft is for users who need a PDF actually processed, not a generated script. It does not reimplement a PDF engine. It pins and verifies `pdfcraft-cli` 0.2.1 and combines 20 skills with a thin Harness for inspection, page operations, forms, redaction, OCR, bookmarks, print preflight, and an embedded editor.
 
 Use it for:
 
@@ -33,7 +33,7 @@ PDF / scans / forms
         ▼
 PdfCraft skill (inspect → plan → execute → read back)
         │
-        ├── printcraft-cli (pinned native PDF operations)
+        ├── pdfcraft-cli (pinned native PDF operations)
         ├── OCR / Tesseract (scans only)
         └── MCP editor (in-browser review and local adjustment)
         │
@@ -60,10 +60,10 @@ new file + receipt + page-level review
 Host / agent
    │  invokes a skill
    ▼
-skills/printcraft-*  ──►  skills/printcraft-harness
+skills/pdfcraft-*  ──►  skills/pdfcraft-harness
                               │
                               ▼
-                     printcraft-cli 0.2.1
+                     pdfcraft-cli 0.2.1
                               │
                               ▼
                      PDF output + receipt.json
@@ -186,9 +186,9 @@ Before committing, verify:
 
 ## Upgrade and migration
 
-- Migrating from `printcraft`: uninstall the old plugin, then install `pdfcraft`.
+- Migrating from `pdfcraft`: uninstall the old plugin, then install `pdfcraft`.
 - Keep old task directories and receipts; do not overwrite them.
-- After the skill migration, old `printcraft-*` names are no longer entry points.
+- After the skill migration, old `pdfcraft-*` names are no longer entry points.
 
 ## Troubleshooting
 

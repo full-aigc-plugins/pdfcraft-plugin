@@ -8,7 +8,7 @@
 
 ## 项目定位
 
-PdfCraft 面向需要把 PDF 真正处理完、而不是只生成一段脚本的用户。它不重新实现 PDF 引擎，而是固定并校验 `printcraft-cli` 0.2.1，用 20 个技能和一层轻量 Harness 把检查、页面操作、表单、脱敏、OCR、书签、印前检查和编辑器串起来。
+PdfCraft 面向需要把 PDF 真正处理完、而不是只生成一段脚本的用户。它不重新实现 PDF 引擎，而是固定并校验 `pdfcraft-cli` 0.2.1，用 20 个技能和一层轻量 Harness 把检查、页面操作、表单、脱敏、OCR、书签、印前检查和编辑器串起来。
 
 适用场景：
 
@@ -33,7 +33,7 @@ PdfCraft 面向需要把 PDF 真正处理完、而不是只生成一段脚本的
         ▼
 PdfCraft 技能（检查 → 计划 → 执行 → 回读）
         │
-        ├── printcraft-cli（固定版本，原生 PDF 操作）
+        ├── pdfcraft-cli（固定版本，原生 PDF 操作）
         ├── OCR / Tesseract（仅扫描件需要）
         └── MCP 编辑器（浏览器内查看与局部调整）
         │
@@ -60,10 +60,10 @@ PdfCraft 技能（检查 → 计划 → 执行 → 回读）
 宿主 / Agent
    │  调用技能
    ▼
-skills/printcraft-*  ──►  skills/printcraft-harness
+skills/pdfcraft-*  ──►  skills/pdfcraft-harness
                               │
                               ▼
-                     printcraft-cli 0.2.1
+                     pdfcraft-cli 0.2.1
                               │
                               ▼
                      PDF 输出 + receipt.json
@@ -186,9 +186,9 @@ python3 -m pytest
 
 ## 升级与迁移
 
-- 从旧 `printcraft` 安装迁移时，先卸载旧插件，再安装 `pdfcraft`。
+- 从旧 `pdfcraft` 安装迁移时，先卸载旧插件，再安装 `pdfcraft`。
 - 旧任务目录和回执保留，不覆盖。
-- 技能名迁移完成后，旧 `printcraft-*` 名称不再作为入口。
+- 技能名迁移完成后，旧 `pdfcraft-*` 名称不再作为入口。
 
 ## 故障排查
 

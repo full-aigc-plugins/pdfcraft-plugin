@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "pdfcraft",
-  "version": "0.1.0-dev.20261024.1",
+  "version": "0.1.0-dev.20261024.2",
   "description": "页面重排、扫描件 OCR、表单填写、内容脱敏与印前检查；保留原件，逐页核对顺序、几何与可搜索文本。",
   "license": "Apache-2.0",
   "extensions": {
@@ -20,12 +20,12 @@
         "composerIconDark": "./assets/official-logo.png"
       }
     },
-    "org.full-aigc.printcraft": {
+    "org.full-aigc.pdfcraft": {
       "contracts": {
-        "execution": "printcraft.execution/1",
-        "verification": "printcraft.verification/1",
-        "ocr": "printcraft.ocr/1",
-        "ocrBackend": "printcraft.ocr-backend/1"
+        "execution": "pdfcraft.execution/1",
+        "verification": "pdfcraft.verification/1",
+        "ocr": "pdfcraft.ocr/1",
+        "ocrBackend": "pdfcraft.ocr-backend/1"
       }
     },
     "ai.nanoco.nanoclaw": {

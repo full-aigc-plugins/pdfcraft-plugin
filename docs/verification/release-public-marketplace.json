@@ -3,7 +3,7 @@
   "codexVersion": "codex-cli 0.147.0",
   "marketplaceRepository": "partme-ai/full-aigc-plugins",
   "marketplaceCommit": "f41f0adcf017e5753bcbc366b18c3855b2ac1177",
-  "pluginRepository": "full-aigc-plugins/printcraft-plugin",
+  "pluginRepository": "full-aigc-plugins/pdfcraft-plugin",
   "pluginTag": "v0.1.0-dev.5",
   "version": "0.1.0-dev.5",
   "installedSkillFiles": 69,
@@ -13,20 +13,20 @@
   "install": {
     "marketplace": {
       "marketplaceName": "full-aigc-plugins",
-      "installedRoot": "/private/tmp/printcraft-publish-20261008/公开 市场/codex-home/.tmp/marketplaces/full-aigc-plugins",
+      "installedRoot": "/private/tmp/pdfcraft-publish-20261008/公开 市场/codex-home/.tmp/marketplaces/full-aigc-plugins",
       "alreadyAdded": false
     },
     "plugin": {
-      "pluginId": "printcraft@full-aigc-plugins",
-      "name": "printcraft",
+      "pluginId": "pdfcraft@full-aigc-plugins",
+      "name": "pdfcraft",
       "marketplaceName": "full-aigc-plugins",
       "version": "0.1.0-dev.5",
-      "installedPath": "/private/tmp/printcraft-publish-20261008/公开 市场/codex-home/plugins/cache/full-aigc-plugins/printcraft/0.1.0-dev.5",
+      "installedPath": "/private/tmp/pdfcraft-publish-20261008/公开 市场/codex-home/plugins/cache/full-aigc-plugins/pdfcraft/0.1.0-dev.5",
       "authPolicy": "ON_USE"
     }
   },
   "validator": {
-    "plugin": "printcraft",
+    "plugin": "pdfcraft",
     "upstreamSkills": 6,
     "localSkills": 1,
     "skills": 7,

@@ -20,8 +20,8 @@ PrintCraft supplies JSON Schema. LightCraft and DesignCraft supply parameter gui
 OpenSpec is initialized and the optimization change is authored; implementation and native installation remain pending. No Git repository or remote release has been created. Existing five plugin specifications remain authoritative for their domains; shared ArtCraft integration for these three domains is still pending.
 
 
-Runtime preflight now binds the release tag and archive name to the locked binary identity and version, rejecting mismatches before runtime creation. The pinned releases remain 0.2.1. Upstream source is now named PdfCraft; skill names and plan domain remain printcraft. The bootstrap supports separately pinned printcraft-cli and pdfcraft-cli binaries without moving old installations; the current released lock remains printcraft-cli 0.2.1.
+Runtime preflight now binds the release tag and archive name to the locked binary identity and version, rejecting mismatches before runtime creation. The pinned releases remain 0.2.1. Upstream source is now named PdfCraft; skill names and plan domain remain pdfcraft. The bootstrap supports separately pinned pdfcraft-cli and pdfcraft-cli binaries without moving old installations; the current released lock remains pdfcraft-cli 0.2.1.
 
 ## 优化规格与任务
 
-已建立 OpenSpec 变更 [harden-printcraft-plugin-delivery](../openspec/changes/harden-printcraft-plugin-delivery/proposal.md)，见[设计](../openspec/changes/harden-printcraft-plugin-delivery/design.md)与[任务](../openspec/changes/harden-printcraft-plugin-delivery/tasks.md)。当前仅完成规格编写；实现、原生、宿主及发布门禁保持未完成。
+已建立 OpenSpec 变更 [harden-pdfcraft-plugin-delivery](../openspec/changes/harden-pdfcraft-plugin-delivery/proposal.md)，见[设计](../openspec/changes/harden-pdfcraft-plugin-delivery/design.md)与[任务](../openspec/changes/harden-pdfcraft-plugin-delivery/tasks.md)。当前仅完成规格编写；实现、原生、宿主及发布门禁保持未完成。

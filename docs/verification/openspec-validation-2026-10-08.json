@@ -4,13 +4,13 @@
   "observedAt": "2026-10-08T12:02:51.511472+00:00",
   "checks": [
     {
-      "change": "harden-printcraft-skill-execution",
-      "command": "openspec validate harden-printcraft-skill-execution --strict --no-interactive",
+      "change": "harden-pdfcraft-skill-execution",
+      "command": "openspec validate harden-pdfcraft-skill-execution --strict --no-interactive",
       "exitCode": 0
     },
     {
-      "change": "harden-printcraft-plugin-delivery",
-      "command": "openspec validate harden-printcraft-plugin-delivery --strict --no-interactive",
+      "change": "harden-pdfcraft-plugin-delivery",
+      "command": "openspec validate harden-pdfcraft-plugin-delivery --strict --no-interactive",
       "exitCode": 0
     }
   ],

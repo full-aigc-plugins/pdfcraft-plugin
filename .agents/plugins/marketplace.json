@@ -1,5 +1,5 @@
 {
-  "name": "full-aigc-plugins-printcraft",
+  "name": "full-aigc-plugins-pdfcraft",
   "interface": {
     "displayName": "PdfCraft（PDF 处理）"
   },
