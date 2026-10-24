@@ -1,9 +1,9 @@
 {
-  "name": "printcraft",
+  "name": "pdfcraft",
   "version": "0.1.0-dev.20261019.1",
   "description": "Page reordering, OCR for scans, form filling, redaction and preflight. Originals are preserved and every page is checked for order, geometry and searchable text.",
-  "homepage": "https://github.com/full-aigc-plugins/printcraft-plugin",
-  "repository": "https://github.com/full-aigc-plugins/printcraft-plugin",
+  "homepage": "https://github.com/full-aigc-plugins/pdfcraft-plugin",
+  "repository": "https://github.com/full-aigc-plugins/pdfcraft-plugin",
   "license": "Apache-2.0",
   "skills": "./skills/",
   "author": {

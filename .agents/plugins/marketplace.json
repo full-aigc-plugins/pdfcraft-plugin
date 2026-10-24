@@ -5,10 +5,10 @@
   },
   "plugins": [
     {
-      "name": "printcraft",
+      "name": "pdfcraft",
       "source": {
         "source": "url",
-        "url": "https://github.com/full-aigc-plugins/printcraft-plugin.git",
+        "url": "https://github.com/full-aigc-plugins/pdfcraft-plugin.git",
         "ref": "v0.1.0-dev.20261019.1"
       },
       "policy": {
@@ -21,9 +21,9 @@
       "interface": {
         "displayName": "PdfCraft · PDF Toolkit",
         "shortDescription": "Page cleanup, OCR, forms, redaction and preflight",
-        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/printcraft-plugin@v0.1.0-dev.20261018.1/assets/official-logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/pdfcraft-plugin@v0.1.0-dev.20261018.1/assets/official-logo.png"
       },
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/printcraft-plugin@v0.1.0-dev.20261019.1/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/pdfcraft-plugin@v0.1.0-dev.20261019.1/assets/official-logo.png",
       "line": "full-aigc",
       "componentTypes": [
         "ui"
