@@ -21,6 +21,11 @@ class Updates(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'rollback'):m.check(new,old,data)
             manifest['extensions']['org.full-aigc.pdfcraft']['contracts']['execution']='pdfcraft.execution/2';p.write_text(json.dumps(manifest))
             with self.assertRaisesRegex(ValueError,'incompatible'):m.check(old,new,data)
+    def test_mcp_runtime_identity_drift_rejected(self):
+        with tempfile.TemporaryDirectory() as t:
+            root=Path(t)/'plugin';shutil.copytree(ROOT,root,ignore=shutil.ignore_patterns('__pycache__','.DS_Store','.git','node_modules','.local','dist'))
+            path=root/'ui/runtime.lock.json';lock=json.loads(path.read_text());lock['version']='0.0.0';path.write_text(json.dumps(lock))
+            with self.assertRaisesRegex(ValueError,'mcp_runtime_identity_drift'):load('validate_package',root).validate()
     def test_missing_replaced_component_rejected(self):
         with tempfile.TemporaryDirectory() as t:
             root=Path(t)/'plugin';shutil.copytree(ROOT,root,ignore=shutil.ignore_patterns('__pycache__','.DS_Store','.git','node_modules','.local','dist'));(root/'skills/pdfcraft-harness').rename(root/'skills/pdfcraft-foreign')
