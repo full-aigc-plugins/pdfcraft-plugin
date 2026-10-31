@@ -16,7 +16,7 @@ class Updates(unittest.TestCase):
         with tempfile.TemporaryDirectory() as t:
             base=Path(t);old=base/'old';new=base/'new';data=base/'tasks';data.mkdir();(data/'receipt.json').write_text('user task survives')
             for target in (old,new):shutil.copytree(ROOT,target,ignore=shutil.ignore_patterns('__pycache__','.DS_Store','.git','node_modules','.local','dist'))
-            p=new/'plugin.json';manifest=json.loads(p.read_text());prefix,number=manifest['version'].rsplit('.',1);manifest['version']=prefix+'.'+str(int(number)+1);p.write_text(json.dumps(manifest));lockpath=new/'source-release.lock.json';lock=json.loads(lockpath.read_text());lock['pluginVersion']=manifest['version'];lockpath.write_text(json.dumps(lock));load('generate_host_manifest',new).generate()
+            p=new/'plugin.json';manifest=json.loads(p.read_text());prefix,number=manifest['version'].rsplit('.',1);manifest['version']=prefix+'.'+str(int(number)+1);p.write_text(json.dumps(manifest));lockpath=new/'source-release.lock.json';lock=json.loads(lockpath.read_text());lock['pluginVersion']=manifest['version'];lockpath.write_text(json.dumps(lock));runtimepath=new/'ui/runtime.lock.json';runtime=json.loads(runtimepath.read_text());runtime['version']=manifest['version'];runtimepath.write_text(json.dumps(runtime));load('generate_host_manifest',new).generate()
             m=load('check_update');self.assertEqual(m.check(old,new,data)['status'],'UPDATE_ELIGIBLE');self.assertEqual((data/'receipt.json').read_text(),'user task survives')
             with self.assertRaisesRegex(ValueError,'rollback'):m.check(new,old,data)
             manifest['extensions']['org.full-aigc.pdfcraft']['contracts']['execution']='pdfcraft.execution/2';p.write_text(json.dumps(manifest))
