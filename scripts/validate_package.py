@@ -29,6 +29,9 @@ def validate():
     for key in ('name','version','description'):
         if not isinstance(manifest.get(key),str) or not manifest[key]:raise ValueError('invalid_manifest_'+key)
     if manifest['name']!='pdfcraft' or not re.fullmatch(r'\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?',manifest['version']):raise ValueError('manifest_identity_invalid')
+    runtime=json.loads((ROOT/'ui/runtime.lock.json').read_text())
+    if runtime.get('name')!=manifest['name'] or runtime.get('version')!=manifest['version']:raise ValueError('mcp_runtime_identity_drift')
+    if runtime.get('url')!='https://github.com/full-aigc-plugins/pdfcraft-plugin/releases/download/v0.1.0-dev.20261019.1/printcraft-runtime.tgz':raise ValueError('mcp_runtime_asset_drift')
     core=manifest['version'].split('+',1)[0];base,sep,pre=core.partition('-')
     if any(len(x)>1 and x.startswith('0') for x in base.split('.')) or sep and any(x.isdigit() and len(x)>1 and x.startswith('0') for x in pre.split('.')):raise ValueError('invalid_semver_leading_zero')
     for key in ('homepage','repository','license'):
