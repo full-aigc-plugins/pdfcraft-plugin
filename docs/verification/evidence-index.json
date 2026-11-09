@@ -1,7 +1,7 @@
 {
   "protocol": "pdfcraft.evidence/1",
   "date": "2026-11-09",
-  "version": "0.1.0-dev.20261109.1",
+  "version": "0.1.0-dev.20261109.2",
   "sourceSha256": {
     "skills/pdfcraft-cli/SKILL.md": "1e5e6a7db0ed4444a3e5dc2ff650c36a8b699be294d89d6d5d1b87a7bbabec42",
     "skills/pdfcraft-cli/agents/openai.yaml": "21d5468b5bbce6096d09d7fc5367564354531f7bcf5ad6587b2331f1c86affce",
