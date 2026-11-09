@@ -1,7 +1,7 @@
 {
   "protocol": "pdfcraft.evidence/1",
   "date": "2026-11-09",
-  "version": "0.1.0-dev.20261109.3",
+  "version": "0.1.0-dev.20261109.4",
   "sourceSha256": {
     "skills/pdfcraft-cli/SKILL.md": "1e5e6a7db0ed4444a3e5dc2ff650c36a8b699be294d89d6d5d1b87a7bbabec42",
     "skills/pdfcraft-cli/agents/openai.yaml": "21d5468b5bbce6096d09d7fc5367564354531f7bcf5ad6587b2331f1c86affce",
@@ -199,12 +199,12 @@
     "ui/tests/loading-notice.test.mjs": "8b5d846fb565732269eabd87f05732a71670d7175f612bab69f1e993b28bf5f8",
     "ui/tests/zcode-bootstrap-resources.test.mjs": "384358a2e7ab373297a01ef63f0544b89f582811230f14aeb4303734aa979f55",
     "ui/tests/zcode-parity.test.mjs": "e2c8b707410306c4ff8b2d324ecf56892e0fc11cc45c50d0a926d60d94371a67",
-    "plugin.json": "1edc74e9429d5dac2b31193e16882db2f1cf2fb60382e8d1a6558f18964d2370",
+    "plugin.json": "663b438ba488e26f47e0f4650d525146378f7c0e72fcbde32a6ead6e64d4c7f0",
     "candidate-source.json": "027f72cd4f40924d48ec1102f9518b169e836a00a30d4fcce03bce4b783800b5",
-    ".codex-plugin/plugin.json": "da1dbbb84c269ea7c97ce642572adf231071e2f6e520888514a34027143b7f41",
+    ".codex-plugin/plugin.json": "9279c18291d9119902ffe2a72e60f37a94f0475a45409ed5d3305ff503527f45",
     "ui/adapter.mjs": "9c30a438b78914d2256f1ca68ae76336306a57e0b923b31556a8ee3e530c2513",
     "ui/package-editor.mjs": "71facc909e121a2ee0a8c06655110cb4f871a8fab0a3fa08de1e7ed6333c8128",
-    "ui/runtime.lock.json": "60d6b32f7459bf17de517fc4ec4cf4af7415a70587da276fa1cd5c8053dcf8b7",
+    "ui/runtime.lock.json": "3774766ad7e7c07d3950c70fc5fc40c401bda1c231bd894c9a83ce4587977fad",
     "ui/catalog.lock.json": "f66c56ab90ea99366e7dc531f9e8fae8767049384cee3d6154f1abc5d1f0b5b7",
     "ui/editor.lock.json": "5cd3038030edbc9928fe783080e09434433563b5aa04c609971611e519e14594"
   },
