@@ -1,9 +1,9 @@
 {
   "name": "pdfcraft",
-  "version": "0.1.0-dev.20261019.1",
+  "version": "0.1.0-dev.20261024.2",
   "description": "Page reordering, OCR for scans, form filling, redaction and preflight. Originals are preserved and every page is checked for order, geometry and searchable text.",
   "license": "Apache-2.0",
-  "repository": "https://github.com/full-aigc-plugins/printcraft-plugin",
+  "repository": "https://github.com/full-aigc-plugins/pdfcraft-plugin",
   "homepage": "https://github.com/full-aigc-plugins/pdfcraft-plugin",
   "interface": {
     "displayName": "PdfCraft · PDF Toolkit",
@@ -18,7 +18,7 @@
   },
   "skills": "./skills/",
   "mcpServers": {
-    "printcraft-editor": {
+    "pdfcraft-editor": {
       "type": "stdio",
       "command": "node",
       "args": [

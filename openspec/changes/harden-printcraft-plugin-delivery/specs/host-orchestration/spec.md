@@ -6,7 +6,7 @@
 
 ### Requirement: HO-01 薄 Harness 与契约消费
 
-系统 SHALL 提供声明为插件本地的 printcraft-harness，路由六项上游技能、调用其公开执行/验收入口，验证消费协议版本；公共执行和 PDF 规则以技能源变更为唯一事实源。
+系统 SHALL 提供声明为插件本地的 pdfcraft-harness，路由六项上游技能、调用其公开执行/验收入口，验证消费协议版本；公共执行和 PDF 规则以技能源变更为唯一事实源。
 
 #### Scenario: 缺失或不兼容执行能力
 - **WHEN** 对应上游资源或协议版本不可用
@@ -42,7 +42,7 @@
 
 ### Requirement: HO-04 显式外部 OCR 薄适配
 
-系统 SHALL 将 ocr 意图路由至 printcraft-use，公开 `harness.py ocr diagnose/run` 原样委托包内 ocr.py，不复制身份或识别逻辑；show 支持 printcraft.ocr/1 的合法状态、runId、后端身份及产物。该协议不能声称 VERIFIED 或 completeAcceptance=true。
+系统 SHALL 将 ocr 意图路由至 pdfcraft-use，公开 `harness.py ocr diagnose/run` 原样委托包内 ocr.py，不复制身份或识别逻辑；show 支持 pdfcraft.ocr/1 的合法状态、runId、后端身份及产物。该协议不能声称 VERIFIED 或 completeAcceptance=true。
 
 #### Scenario: 外部 OCR 未知结果
 - **WHEN** show 消费外部 OCR 的 UNKNOWN/FAILED_OR_PARTIAL 回执

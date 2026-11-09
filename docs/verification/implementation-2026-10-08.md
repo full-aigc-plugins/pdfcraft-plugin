@@ -2,11 +2,11 @@
 
 > 以下为开发阶段历史验收记录。最新 dev.5 发行身份、任务状态和当前宿主证据以 [发布验收记录](release-2026-10-08.md) 为准；历史版本/命令不改写。
 
-候选 0.1.0-dev.3；OpenSpec change: harden-printcraft-plugin-delivery。**21/24 项任务完成**；正式身份/发布与最终归档仍开放。
+候选 0.1.0-dev.3；OpenSpec change: harden-pdfcraft-plugin-delivery。**21/24 项任务完成**；正式身份/发布与最终归档仍开放。
 
 ## 实现
 
-六项上游快照与一项本地 printcraft-harness 精确分开计数。候选来源绑定 sourceProject、sourceVersion、suite SHA 和逐文件 SHA，禁止非空 releaseTag/sourceCommit 冒充候选。正式锁校验 tag/commit/版本格式，但离线检查只报告 OFFLINE_IDENTITY_ONLY_REMOTE_NOT_VERIFIED，不伪称远端已验证。
+六项上游快照与一项本地 pdfcraft-harness 精确分开计数。候选来源绑定 sourceProject、sourceVersion、suite SHA 和逐文件 SHA，禁止非空 releaseTag/sourceCommit 冒充候选。正式锁校验 tag/commit/版本格式，但离线检查只报告 OFFLINE_IDENTITY_ONLY_REMOTE_NOT_VERIFIED，不伪称远端已验证。
 
 作者端校验清单字段、类型、SemVer、组件、已知宿主扩展与资源；根 portable 清单生成 Codex 兼容清单，同名同版本。此作者端严格校验不是一个新的客户端加载器，不替代宿主实际容错规则。
 
@@ -14,7 +14,7 @@ Harness 只委托包内上游公开入口，消费 execution/1 / verification/1�
 
 ```mermaid
 flowchart LR
-  S[printcraft-skills 六项技能] -->|受控同步和 SHA| P[插件快照]
+  S[pdfcraft-skills 六项技能] -->|受控同步和 SHA| P[插件快照]
   M[portable plugin.json] --> G[生成 Codex 清单]
   P --> C[隔离 Codex 安装缓存]
   G --> C
@@ -63,17 +63,17 @@ python3 -I -B scripts/validate_package.py
 python3 -I -B -m unittest discover -s tests
 python3 scripts/generate_host_manifest.py
 codex plugin marketplace add <隔离本地marketplace> --json
-codex plugin add printcraft@printcraft-local-validation --json
+codex plugin add pdfcraft@pdfcraft-local-validation --json
 # app-server initialize 后调用 plugin/read，marketplacePath 指向 marketplace.json 文件
 codex exec --ephemeral --json --sandbox workspace-write --add-dir <隔离目录> -m gpt-5.6-sol <验收提示>
-openspec validate harden-printcraft-plugin-delivery --strict
+openspec validate harden-pdfcraft-plugin-delivery --strict
 python3 scripts/evidence.py --check docs/verification/evidence-index.json
 ```
 
 包验证的 hostAcceptance=NOT_RUN 指该静态校验函数没有执行宿主，实际结果在本报告单列。未运行 CI、未提交/推送、未正式发布，change 未同步/归档。
 # 跨插件证据补充
 
-技能源新增显式真实跨仓验收：ArtCraft 0.1.0-dev.113-runtime.1 的实际调度器通过 VectorCraft 0.2.0-craft.2 公开技能生成 PDF，PrintCraft 0.2.1 完成合并、局部裁剪及保存重开，独立节点和未修改页保持不变。完整证据由 printcraft-skills 的 docs/verification/cross-plugin-2026-10-08.md 持有；不是本插件宿主实际跨插件编排通过。
+技能源新增显式真实跨仓验收：ArtCraft 0.1.0-dev.113-runtime.1 的实际调度器通过 VectorCraft 0.2.0-craft.2 公开技能生成 PDF，PrintCraft 0.2.1 完成合并、局部裁剪及保存重开，独立节点和未修改页保持不变。完整证据由 pdfcraft-skills 的 docs/verification/cross-plugin-2026-10-08.md 持有；不是本插件宿主实际跨插件编排通过。
 
 六项分发技能、原生锁与插件 Harness 没有因这次新增测试而改变；原宿主/模型证据仍适用原场景。中文实际请求被固定原生拒绝，Linux 制品摘要已核对但 Docker 在原生执行前失败，macOS x86_64 缺 Rosetta，远程 Windows 连接不可用。手机/平板及正式发行门禁保持开放。修改前报告与索引另存 history/pre-cross-plugin-2026-10-08/。
 

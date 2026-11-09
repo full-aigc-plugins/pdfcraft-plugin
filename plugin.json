@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "printcraft",
-  "version": "0.1.0-dev.20261019.1",
+  "name": "pdfcraft",
+  "version": "0.1.0-dev.20261024.2",
   "description": "Page reordering, OCR for scans, form filling, redaction and preflight. Originals are preserved and every page is checked for order, geometry and searchable text.",
   "license": "Apache-2.0",
   "extensions": {
@@ -20,18 +20,18 @@
         "composerIconDark": "./assets/official-logo.png"
       }
     },
-    "org.full-aigc.printcraft": {
+    "org.full-aigc.pdfcraft": {
       "contracts": {
-        "execution": "printcraft.execution/1",
-        "verification": "printcraft.verification/1",
-        "ocr": "printcraft.ocr/1",
-        "ocrBackend": "printcraft.ocr-backend/1"
+        "execution": "pdfcraft.execution/1",
+        "verification": "pdfcraft.verification/1",
+        "ocr": "pdfcraft.ocr/1",
+        "ocrBackend": "pdfcraft.ocr-backend/1"
       }
     },
     "ai.nanoco.nanoclaw": {
       "agentName": "PrintCraft"
     }
   },
-  "repository": "https://github.com/full-aigc-plugins/printcraft-plugin",
-  "homepage": "https://github.com/full-aigc-plugins/printcraft-plugin"
+  "repository": "https://github.com/full-aigc-plugins/pdfcraft-plugin",
+  "homepage": "https://github.com/full-aigc-plugins/pdfcraft-plugin"
 }

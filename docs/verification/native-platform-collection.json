@@ -1,6 +1,6 @@
 {
   "runId": "37772042337",
-  "url": "https://github.com/full-aigc-skills/printcraft-skills/actions/runs/37772042337",
+  "url": "https://github.com/full-aigc-skills/pdfcraft-skills/actions/runs/37772042337",
   "sourceCommit": "bad64e181e1b6b4e8d60e10cdb7623b6d2710d74",
   "status": "success",
   "platforms": [
@@ -24,9 +24,9 @@
           }
         ],
         "search_dirs": [
-          "/home/runner/work/printcraft-skills/printcraft-skills/native-evidence/models",
-          "/home/runner/work/printcraft-skills/printcraft-skills/native-evidence/../Resources/models",
-          "/home/runner/work/printcraft/printcraft/crates/ocr/../../assets/models"
+          "/home/runner/work/pdfcraft-skills/pdfcraft-skills/native-evidence/models",
+          "/home/runner/work/pdfcraft-skills/pdfcraft-skills/native-evidence/../Resources/models",
+          "/home/runner/work/pdfcraft/pdfcraft/crates/ocr/../../assets/models"
         ]
       },
       "runtimeBinarySha256": "8123365733dbfd70e982eaad2bec6e12b87a203ee9ffa9acf7bc8ceba6a0ad36",
@@ -57,9 +57,9 @@
           }
         ],
         "search_dirs": [
-          "/Users/runner/work/printcraft-skills/printcraft-skills/native-evidence/models",
-          "/Users/runner/work/printcraft-skills/printcraft-skills/native-evidence/../Resources/models",
-          "/Users/runner/work/printcraft/printcraft/crates/ocr/../../assets/models"
+          "/Users/runner/work/pdfcraft-skills/pdfcraft-skills/native-evidence/models",
+          "/Users/runner/work/pdfcraft-skills/pdfcraft-skills/native-evidence/../Resources/models",
+          "/Users/runner/work/pdfcraft/pdfcraft/crates/ocr/../../assets/models"
         ]
       },
       "runtimeBinarySha256": "b7783b596870ed5a326f29456d4647382d2e1e4d7b7ffe75ded192cd15b86995",
@@ -90,9 +90,9 @@
           }
         ],
         "search_dirs": [
-          "/Users/runner/work/printcraft-skills/printcraft-skills/native-evidence/models",
-          "/Users/runner/work/printcraft-skills/printcraft-skills/native-evidence/../Resources/models",
-          "/Users/runner/work/printcraft/printcraft/crates/ocr/../../assets/models"
+          "/Users/runner/work/pdfcraft-skills/pdfcraft-skills/native-evidence/models",
+          "/Users/runner/work/pdfcraft-skills/pdfcraft-skills/native-evidence/../Resources/models",
+          "/Users/runner/work/pdfcraft/pdfcraft/crates/ocr/../../assets/models"
         ]
       },
       "runtimeBinarySha256": "b7783b596870ed5a326f29456d4647382d2e1e4d7b7ffe75ded192cd15b86995",
@@ -123,9 +123,9 @@
           }
         ],
         "search_dirs": [
-          "D:\\a\\printcraft-skills\\printcraft-skills\\native-evidence\\models",
-          "D:\\a\\printcraft-skills\\printcraft-skills\\native-evidence\\../Resources/models",
-          "D:\\a\\printcraft\\printcraft\\crates\\ocr\\../../assets/models"
+          "D:\\a\\pdfcraft-skills\\pdfcraft-skills\\native-evidence\\models",
+          "D:\\a\\pdfcraft-skills\\pdfcraft-skills\\native-evidence\\../Resources/models",
+          "D:\\a\\pdfcraft\\pdfcraft\\crates\\ocr\\../../assets/models"
         ]
       },
       "runtimeBinarySha256": "ddd8c330c4c9cb5c57f7671ffbd44beeb5d992122177d9f15542a775e02a519e",
@@ -156,9 +156,9 @@
           }
         ],
         "search_dirs": [
-          "/home/runner/work/printcraft-skills/printcraft-skills/native-evidence/models",
-          "/home/runner/work/printcraft-skills/printcraft-skills/native-evidence/../Resources/models",
-          "/home/runner/work/printcraft/printcraft/crates/ocr/../../assets/models"
+          "/home/runner/work/pdfcraft-skills/pdfcraft-skills/native-evidence/models",
+          "/home/runner/work/pdfcraft-skills/pdfcraft-skills/native-evidence/../Resources/models",
+          "/home/runner/work/pdfcraft/pdfcraft/crates/ocr/../../assets/models"
         ]
       },
       "runtimeBinarySha256": "83fa013a814583d569fb2463bc6e1379f4aa0f9d293b034cf96308e8f77c54c4",

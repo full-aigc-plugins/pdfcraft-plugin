@@ -1,10 +1,10 @@
 {
-  "domain": "printcraft",
+  "domain": "pdfcraft",
   "steps": [
     {
       "command": "doc_open",
       "params": {
-        "path": "/tmp/printcraft-publish-20261008/隔离 宿主/工作区/source.pdf"
+        "path": "/tmp/pdfcraft-publish-20261008/隔离 宿主/工作区/source.pdf"
       }
     },
     {
@@ -19,7 +19,7 @@
       "command": "doc_save",
       "params": {
         "doc": 1,
-        "path": "/tmp/printcraft-publish-20261008/隔离 宿主/工作区/result-dev5.pdf",
+        "path": "/tmp/pdfcraft-publish-20261008/隔离 宿主/工作区/result-dev5.pdf",
         "full": true
       }
     }

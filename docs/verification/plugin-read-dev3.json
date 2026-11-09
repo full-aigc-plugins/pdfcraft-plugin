@@ -2,18 +2,18 @@
   "id": 2,
   "result": {
     "plugin": {
-      "marketplaceName": "printcraft-local-validation",
-      "marketplacePath": "/tmp/printcraft-acceptance/宿主 测试/market/.agents/plugins/marketplace.json",
+      "marketplaceName": "pdfcraft-local-validation",
+      "marketplacePath": "/tmp/pdfcraft-acceptance/宿主 测试/market/.agents/plugins/marketplace.json",
       "summary": {
-        "id": "printcraft@printcraft-local-validation",
+        "id": "pdfcraft@pdfcraft-local-validation",
         "remotePluginId": null,
         "version": null,
         "localVersion": "0.1.0-dev.3",
-        "name": "printcraft",
+        "name": "pdfcraft",
         "shareContext": null,
         "source": {
           "type": "local",
-          "path": "/tmp/printcraft-acceptance/宿主 测试/market/plugin"
+          "path": "/tmp/pdfcraft-acceptance/宿主 测试/market/plugin"
         },
         "installed": true,
         "installedAt": null,
@@ -55,7 +55,7 @@
       "description": "PDF 检查、页面编辑、单会话计划与摘要绑定验收；本地候选，宿主和发行证据分别记录。",
       "skills": [
         {
-          "name": "printcraft:printcraft-cli",
+          "name": "pdfcraft:pdfcraft-cli",
           "description": "用户明确要求 PrintCraft 原生 CLI、具体工具、参数 Schema、表单、签名、脱敏或 PDF/A 专项操作时使用；先发现固定版本能力。",
           "shortDescription": null,
           "interface": {
@@ -66,13 +66,13 @@
             "iconSmallUrl": null,
             "iconLargeUrl": null,
             "brandColor": null,
-            "defaultPrompt": "Use $printcraft-cli to handle the requested PDF task and verify its artifacts."
+            "defaultPrompt": "Use $pdfcraft-cli to handle the requested PDF task and verify its artifacts."
           },
-          "path": "/private/tmp/printcraft-acceptance/宿主 测试/market/plugin/skills/printcraft-cli/SKILL.md",
+          "path": "/private/tmp/pdfcraft-acceptance/宿主 测试/market/plugin/skills/pdfcraft-cli/SKILL.md",
           "enabled": true
         },
         {
-          "name": "printcraft:printcraft-cli-automation",
+          "name": "pdfcraft:pdfcraft-cli-automation",
           "description": "用户需要多步 PDF 自动化、单会话文档 ID、任务回执、超时或中断后的只读对账时使用；UNKNOWN 禁止自动重放写入。",
           "shortDescription": null,
           "interface": {
@@ -83,13 +83,13 @@
             "iconSmallUrl": null,
             "iconLargeUrl": null,
             "brandColor": null,
-            "defaultPrompt": "Use $printcraft-cli-automation to handle the requested PDF task and verify its artifacts."
+            "defaultPrompt": "Use $pdfcraft-cli-automation to handle the requested PDF task and verify its artifacts."
           },
-          "path": "/private/tmp/printcraft-acceptance/宿主 测试/market/plugin/skills/printcraft-cli-automation/SKILL.md",
+          "path": "/private/tmp/pdfcraft-acceptance/宿主 测试/market/plugin/skills/pdfcraft-cli-automation/SKILL.md",
           "enabled": true
         },
         {
-          "name": "printcraft:printcraft-cli-inspect",
+          "name": "pdfcraft:pdfcraft-cli-inspect",
           "description": "用户要求 PDF 元数据、页数、文本、扫描件判断、预览或处理前后检查时使用；空文本只标待 OCR，不误判为空白文档。",
           "shortDescription": null,
           "interface": {
@@ -100,13 +100,13 @@
             "iconSmallUrl": null,
             "iconLargeUrl": null,
             "brandColor": null,
-            "defaultPrompt": "Use $printcraft-cli-inspect to handle the requested PDF task and verify its artifacts."
+            "defaultPrompt": "Use $pdfcraft-cli-inspect to handle the requested PDF task and verify its artifacts."
           },
-          "path": "/private/tmp/printcraft-acceptance/宿主 测试/market/plugin/skills/printcraft-cli-inspect/SKILL.md",
+          "path": "/private/tmp/pdfcraft-acceptance/宿主 测试/market/plugin/skills/pdfcraft-cli-inspect/SKILL.md",
           "enabled": true
         },
         {
-          "name": "printcraft:printcraft-cli-pages",
+          "name": "pdfcraft:pdfcraft-cli-pages",
           "description": "用户要求 PDF 提取、合并、拆分、重排、旋转、裁剪或页框调整时使用；保留原件并逐页核对来源顺序和几何。",
           "shortDescription": null,
           "interface": {
@@ -117,13 +117,13 @@
             "iconSmallUrl": null,
             "iconLargeUrl": null,
             "brandColor": null,
-            "defaultPrompt": "Use $printcraft-cli-pages to handle the requested PDF task and verify its artifacts."
+            "defaultPrompt": "Use $pdfcraft-cli-pages to handle the requested PDF task and verify its artifacts."
           },
-          "path": "/private/tmp/printcraft-acceptance/宿主 测试/market/plugin/skills/printcraft-cli-pages/SKILL.md",
+          "path": "/private/tmp/pdfcraft-acceptance/宿主 测试/market/plugin/skills/pdfcraft-cli-pages/SKILL.md",
           "enabled": true
         },
         {
-          "name": "printcraft:printcraft-cli-setup",
+          "name": "pdfcraft:pdfcraft-cli-setup",
           "description": "PrintCraft 首次安装、缺失运行时、版本或摘要不匹配、离线归档及平台诊断时使用；诊断不写文件，安装与升级分开授权。",
           "shortDescription": null,
           "interface": {
@@ -134,13 +134,13 @@
             "iconSmallUrl": null,
             "iconLargeUrl": null,
             "brandColor": null,
-            "defaultPrompt": "Use $printcraft-cli-setup to handle the requested PDF task and verify its artifacts."
+            "defaultPrompt": "Use $pdfcraft-cli-setup to handle the requested PDF task and verify its artifacts."
           },
-          "path": "/private/tmp/printcraft-acceptance/宿主 测试/market/plugin/skills/printcraft-cli-setup/SKILL.md",
+          "path": "/private/tmp/pdfcraft-acceptance/宿主 测试/market/plugin/skills/pdfcraft-cli-setup/SKILL.md",
           "enabled": true
         },
         {
-          "name": "printcraft:printcraft-harness",
+          "name": "pdfcraft:pdfcraft-harness",
           "description": "用户在 PrintCraft 插件内需要多阶段 PDF 编排、任务状态与产物展示、UNKNOWN 对账或定向修订时使用；薄适配上游六项技能和版本化协议，不重写原生执行器。",
           "shortDescription": null,
           "interface": {
@@ -151,13 +151,13 @@
             "iconSmallUrl": null,
             "iconLargeUrl": null,
             "brandColor": null,
-            "defaultPrompt": "Use $printcraft-harness to route this PDF task and review its receipts."
+            "defaultPrompt": "Use $pdfcraft-harness to route this PDF task and review its receipts."
           },
-          "path": "/private/tmp/printcraft-acceptance/宿主 测试/market/plugin/skills/printcraft-harness/SKILL.md",
+          "path": "/private/tmp/pdfcraft-acceptance/宿主 测试/market/plugin/skills/pdfcraft-harness/SKILL.md",
           "enabled": true
         },
         {
-          "name": "printcraft:printcraft-use",
+          "name": "pdfcraft:pdfcraft-use",
           "description": "用户提出一般 PDF 检查、编辑、交付需求但未指定专业入口时使用；按目标路由，登记原件和产物，串联执行与验收。",
           "shortDescription": null,
           "interface": {
@@ -168,9 +168,9 @@
             "iconSmallUrl": null,
             "iconLargeUrl": null,
             "brandColor": null,
-            "defaultPrompt": "Use $printcraft-use to handle the requested PDF task and verify its artifacts."
+            "defaultPrompt": "Use $pdfcraft-use to handle the requested PDF task and verify its artifacts."
           },
-          "path": "/private/tmp/printcraft-acceptance/宿主 测试/market/plugin/skills/printcraft-use/SKILL.md",
+          "path": "/private/tmp/pdfcraft-acceptance/宿主 测试/market/plugin/skills/pdfcraft-use/SKILL.md",
           "enabled": true
         }
       ],

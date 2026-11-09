@@ -16,14 +16,19 @@ class Updates(unittest.TestCase):
         with tempfile.TemporaryDirectory() as t:
             base=Path(t);old=base/'old';new=base/'new';data=base/'tasks';data.mkdir();(data/'receipt.json').write_text('user task survives')
             for target in (old,new):shutil.copytree(ROOT,target,ignore=shutil.ignore_patterns('__pycache__','.DS_Store','.git','node_modules','.local','dist'))
-            p=new/'plugin.json';manifest=json.loads(p.read_text());prefix,number=manifest['version'].rsplit('.',1);manifest['version']=prefix+'.'+str(int(number)+1);p.write_text(json.dumps(manifest));lockpath=new/'source-release.lock.json';lock=json.loads(lockpath.read_text());lock['pluginVersion']=manifest['version'];lockpath.write_text(json.dumps(lock));load('generate_host_manifest',new).generate()
+            p=new/'plugin.json';manifest=json.loads(p.read_text());prefix,number=manifest['version'].rsplit('.',1);manifest['version']=prefix+'.'+str(int(number)+1);p.write_text(json.dumps(manifest));lockpath=new/'source-release.lock.json';lock=json.loads(lockpath.read_text());lock['pluginVersion']=manifest['version'];lockpath.write_text(json.dumps(lock));runtimepath=new/'ui/runtime.lock.json';runtime=json.loads(runtimepath.read_text());runtime['version']=manifest['version'];runtimepath.write_text(json.dumps(runtime));load('generate_host_manifest',new).generate()
             m=load('check_update');self.assertEqual(m.check(old,new,data)['status'],'UPDATE_ELIGIBLE');self.assertEqual((data/'receipt.json').read_text(),'user task survives')
             with self.assertRaisesRegex(ValueError,'rollback'):m.check(new,old,data)
-            manifest['extensions']['org.full-aigc.printcraft']['contracts']['execution']='printcraft.execution/2';p.write_text(json.dumps(manifest))
+            manifest['extensions']['org.full-aigc.pdfcraft']['contracts']['execution']='pdfcraft.execution/2';p.write_text(json.dumps(manifest))
             with self.assertRaisesRegex(ValueError,'incompatible'):m.check(old,new,data)
+    def test_mcp_runtime_identity_drift_rejected(self):
+        with tempfile.TemporaryDirectory() as t:
+            root=Path(t)/'plugin';shutil.copytree(ROOT,root,ignore=shutil.ignore_patterns('__pycache__','.DS_Store','.git','node_modules','.local','dist'))
+            path=root/'ui/runtime.lock.json';lock=json.loads(path.read_text());lock['version']='0.0.0';path.write_text(json.dumps(lock))
+            with self.assertRaisesRegex(ValueError,'mcp_runtime_identity_drift'):load('validate_package',root).validate()
     def test_missing_replaced_component_rejected(self):
         with tempfile.TemporaryDirectory() as t:
-            root=Path(t)/'plugin';shutil.copytree(ROOT,root,ignore=shutil.ignore_patterns('__pycache__','.DS_Store','.git','node_modules','.local','dist'));(root/'skills/printcraft-harness').rename(root/'skills/printcraft-foreign')
+            root=Path(t)/'plugin';shutil.copytree(ROOT,root,ignore=shutil.ignore_patterns('__pycache__','.DS_Store','.git','node_modules','.local','dist'));(root/'skills/pdfcraft-harness').rename(root/'skills/pdfcraft-foreign')
             with self.assertRaisesRegex(ValueError,'skill_set_mismatch'):load('validate_package',root).validate()
 if __name__=='__main__':unittest.main()
 
@@ -48,11 +53,11 @@ class ReleaseHostManifests(unittest.TestCase):
 class OptionalOcrContractCompatibility(unittest.TestCase):
     def test_known_optional_ocr_contracts_extend_core_without_rejecting_old(self):
         m=load('check_update')
-        core={'execution':'printcraft.execution/1','verification':'printcraft.verification/1'}
-        def manifest(contracts):return {'extensions':{'org.full-aigc.printcraft':{'contracts':contracts}}}
+        core={'execution':'pdfcraft.execution/1','verification':'pdfcraft.verification/1'}
+        def manifest(contracts):return {'extensions':{'org.full-aigc.pdfcraft':{'contracts':contracts}}}
         m.validate_contracts(manifest(core))
-        current=dict(core,ocr='printcraft.ocr/1',ocrBackend='printcraft.ocr-backend/1')
+        current=dict(core,ocr='pdfcraft.ocr/1',ocrBackend='pdfcraft.ocr-backend/1')
         m.validate_contracts(manifest(current))
-        for key,value in [('execution','printcraft.execution/2'),('ocr','printcraft.ocr/2'),('unknown','x')]:
+        for key,value in [('execution','pdfcraft.execution/2'),('ocr','pdfcraft.ocr/2'),('unknown','x')]:
             with self.subTest(key=key),self.assertRaisesRegex(ValueError,'incompatible'):
                 m.validate_contracts(manifest(dict(current,**{key:value})))

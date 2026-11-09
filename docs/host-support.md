@@ -9,7 +9,7 @@
 | Claude Code | .claude-plugin/plugin.json + .mcp.json | 本地 CLI 清单校验 | 原生加载/模型 NOT_RUN |
 | Kimi Code | 生成 kimi.plugin.json | 打包身份校验 | 加载/模型 NOT_RUN |
 
-Codex `skills/list` 不等同插件组件列表；以 `plugin/read` 查看插件七项技能，加载名为 `printcraft:<技能名>`。界面清单由 scripts/generate_host_manifest.py 从根清单生成；不可手工漂移。
+Codex `skills/list` 不等同插件组件列表；以 `plugin/read` 查看插件七项技能，加载名为 `pdfcraft:<技能名>`。界面清单由 scripts/generate_host_manifest.py 从根清单生成；不可手工漂移。
 
 本地验收使用临时 CODEX_HOME，现有登录以临时文件链接复用并在测试结束移除，没有复制/归档凭据。当前正式用户配置未修改。实际模型命令与结果见 verification/；模型列出技能不代替运行技能脚本。
 

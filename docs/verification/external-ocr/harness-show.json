@@ -1,5 +1,5 @@
 {
-  "protocol": "printcraft.ocr/1",
+  "protocol": "pdfcraft.ocr/1",
   "runId": "da7f006c-4d51-42e2-af60-54e940504174",
   "status": "DETERMINISTIC_PASS_REVIEW_REQUIRED",
   "nextAction": "REVIEW_ARTIFACTS",
@@ -8,7 +8,7 @@
   "inputs": "85a798a710287131bc4365fdb17ac8d345308677550db46106e8b215e00ee665",
   "artifacts": [
     {
-      "path": "/private/tmp/printcraft-ocr-20261008/插件 Harness 验收/searchable.pdf",
+      "path": "/private/tmp/pdfcraft-ocr-20261008/插件 Harness 验收/searchable.pdf",
       "role": "delivery",
       "mediaType": "application/pdf",
       "status": "PRESENT",
@@ -16,7 +16,7 @@
       "sha256": "2a28138efc9d92c6faa20aeeeebe4313711add5bf4ab0e1f24de1865d10c9dab"
     },
     {
-      "path": "/private/tmp/printcraft-ocr-20261008/插件 Harness 验收/searchable.txt",
+      "path": "/private/tmp/pdfcraft-ocr-20261008/插件 Harness 验收/searchable.txt",
       "role": "recognized-text",
       "mediaType": "text/plain",
       "status": "PRESENT",
@@ -25,7 +25,7 @@
     }
   ],
   "backendIdentity": {
-    "protocol": "printcraft.ocr-backend/1",
+    "protocol": "pdfcraft.ocr-backend/1",
     "backend": "tesseract",
     "executable": "/opt/homebrew/Cellar/tesseract/5.5.3/bin/tesseract",
     "tessdataDir": "/opt/homebrew/share/tessdata",
@@ -37,13 +37,13 @@
     "pdfFontSha256": "c7845420925a23d88ed830a63957b8af85a66a8daf8d9fc90e843673b2ef1a59"
   },
   "nativeIdentity": {
-    "executable": "/tmp/printcraft-publish-20261008/隔离 runtime/printcraft/0.2.1/printcraft-cli",
+    "executable": "/tmp/pdfcraft-publish-20261008/隔离 runtime/pdfcraft/0.2.1/pdfcraft-cli",
     "reused": true,
     "binarySha256": "b7783b596870ed5a326f29456d4647382d2e1e4d7b7ffe75ded192cd15b86995",
     "version": "0.2.1",
     "platform": "darwin-arm64",
-    "versionOutput": "printcraft-cli 0.2.1",
-    "artifact": "printcraft-cli",
+    "versionOutput": "pdfcraft-cli 0.2.1",
+    "artifact": "pdfcraft-cli",
     "status": "VERIFIED",
     "installed": true,
     "readOnly": true

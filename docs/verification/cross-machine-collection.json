@@ -1,6 +1,6 @@
 {
   "runId": "37773443950",
-  "url": "https://github.com/full-aigc-skills/printcraft-skills/actions/runs/37773443950",
+  "url": "https://github.com/full-aigc-skills/pdfcraft-skills/actions/runs/37773443950",
   "sourceCommit": "cb90b21920e04fbe0f65be3d0fe8619cbe33e1da",
   "status": "PASS_SCOPED_CROSS_MACHINE",
   "sender": {
@@ -39,12 +39,12 @@
       "runtime": {
         "system": "linux",
         "machine": "x86_64",
-        "asset": "printcraft-0.2.1-linux-x86_64.tar.gz",
-        "url": "https://github.com/storytold/pdfcraft/releases/download/v0.2.1/printcraft-0.2.1-linux-x86_64.tar.gz",
+        "asset": "pdfcraft-0.2.1-linux-x86_64.tar.gz",
+        "url": "https://github.com/storytold/pdfcraft/releases/download/v0.2.1/pdfcraft-0.2.1-linux-x86_64.tar.gz",
         "archiveSha256": "73b2977330d73716971237f68f89cba6ad52cbfb563ad0ab6d9ad18f44d45192",
-        "member": "printcraft-0.2.1-linux-x86_64/bin/printcraft-cli",
+        "member": "pdfcraft-0.2.1-linux-x86_64/bin/pdfcraft-cli",
         "binarySha256": "83fa013a814583d569fb2463bc6e1379f4aa0f9d293b034cf96308e8f77c54c4",
-        "versionOutput": "printcraft-cli 0.2.1\nDiscord: https://discord.gg/artcraft  (help and feedback)\nWeb:     https://getartcraft.com/apps/printcraft\nSource:  https://github.com/storytold/printcraft\n"
+        "versionOutput": "pdfcraft-cli 0.2.1\nDiscord: https://discord.gg/artcraft  (help and feedback)\nWeb:     https://getartcraft.com/apps/pdfcraft\nSource:  https://github.com/storytold/pdfcraft\n"
       },
       "packageVerification": {
         "package-v1": {
@@ -76,7 +76,7 @@
           "creator": null,
           "encrypted": false,
           "fields": 0,
-          "file": "/home/runner/work/printcraft-skills/printcraft-skills/receiver-evidence/receiver-revised.pdf",
+          "file": "/home/runner/work/pdfcraft-skills/pdfcraft-skills/receiver-evidence/receiver-revised.pdf",
           "file_size": 4996,
           "first_page_pt": [
             120.0,
@@ -122,12 +122,12 @@
       "runtime": {
         "system": "darwin",
         "machine": "x86_64",
-        "asset": "printcraft-cli-0.2.1-macos-universal.zip",
-        "url": "https://github.com/storytold/pdfcraft/releases/download/v0.2.1/printcraft-cli-0.2.1-macos-universal.zip",
+        "asset": "pdfcraft-cli-0.2.1-macos-universal.zip",
+        "url": "https://github.com/storytold/pdfcraft/releases/download/v0.2.1/pdfcraft-cli-0.2.1-macos-universal.zip",
         "archiveSha256": "bda65829033916c5de5a7ddc0763437f8db2e8792ee43c8dc2676434acb3d495",
-        "member": "printcraft-cli-0.2.1-macos-universal/printcraft-cli",
+        "member": "pdfcraft-cli-0.2.1-macos-universal/pdfcraft-cli",
         "binarySha256": "b7783b596870ed5a326f29456d4647382d2e1e4d7b7ffe75ded192cd15b86995",
-        "versionOutput": "printcraft-cli 0.2.1\nDiscord: https://discord.gg/artcraft  (help and feedback)\nWeb:     https://getartcraft.com/apps/printcraft\nSource:  https://github.com/storytold/printcraft\n"
+        "versionOutput": "pdfcraft-cli 0.2.1\nDiscord: https://discord.gg/artcraft  (help and feedback)\nWeb:     https://getartcraft.com/apps/pdfcraft\nSource:  https://github.com/storytold/pdfcraft\n"
       },
       "packageVerification": {
         "package-v1": {
@@ -159,7 +159,7 @@
           "creator": null,
           "encrypted": false,
           "fields": 0,
-          "file": "/Users/runner/work/printcraft-skills/printcraft-skills/receiver-evidence/receiver-revised.pdf",
+          "file": "/Users/runner/work/pdfcraft-skills/pdfcraft-skills/receiver-evidence/receiver-revised.pdf",
           "file_size": 4996,
           "first_page_pt": [
             120.0,

@@ -2,24 +2,24 @@
   "fixtureOnly": true,
   "events": [
     {
-      "marketplaceName": "printcraft-update-fixture",
-      "installedRoot": "/private/tmp/printcraft-acceptance/更新 验证2/market",
+      "marketplaceName": "pdfcraft-update-fixture",
+      "installedRoot": "/private/tmp/pdfcraft-acceptance/更新 验证2/market",
       "alreadyAdded": false
     },
     {
-      "pluginId": "printcraft@printcraft-update-fixture",
-      "name": "printcraft",
-      "marketplaceName": "printcraft-update-fixture",
+      "pluginId": "pdfcraft@pdfcraft-update-fixture",
+      "name": "pdfcraft",
+      "marketplaceName": "pdfcraft-update-fixture",
       "version": "0.1.0-dev.2",
-      "installedPath": "/private/tmp/printcraft-acceptance/更新 验证2/cache/plugins/cache/printcraft-update-fixture/printcraft/0.1.0-dev.2",
+      "installedPath": "/private/tmp/pdfcraft-acceptance/更新 验证2/cache/plugins/cache/pdfcraft-update-fixture/pdfcraft/0.1.0-dev.2",
       "authPolicy": "ON_INSTALL"
     },
     {
-      "pluginId": "printcraft@printcraft-update-fixture",
-      "name": "printcraft",
-      "marketplaceName": "printcraft-update-fixture",
+      "pluginId": "pdfcraft@pdfcraft-update-fixture",
+      "name": "pdfcraft",
+      "marketplaceName": "pdfcraft-update-fixture",
       "version": "0.1.0-dev.3",
-      "installedPath": "/private/tmp/printcraft-acceptance/更新 验证2/cache/plugins/cache/printcraft-update-fixture/printcraft/0.1.0-dev.3",
+      "installedPath": "/private/tmp/pdfcraft-acceptance/更新 验证2/cache/plugins/cache/pdfcraft-update-fixture/pdfcraft/0.1.0-dev.3",
       "authPolicy": "ON_INSTALL"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "version": "0.1.0-dev.3",
   "scope": "UPSTREAM_LOCAL_NATIVE_PLUS_PLUGIN_MODEL_HANDOFF_NOT_FULL_ARTCRAFT_HOST_ORCHESTRATION",
-  "sourceProject": "printcraft-skills",
+  "sourceProject": "pdfcraft-skills",
   "sourceReportSha256": "6c59eccea9146c3f4cf55aeb0c6b0473515fb3e333201425d07465a1c88dfed6",
   "producerVersion": "0.1.0-dev.113-runtime.1",
   "localDependencyHandoff": "PASS_PUBLIC_ENTRY",

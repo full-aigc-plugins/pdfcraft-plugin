@@ -16,7 +16,7 @@
 
 | 内容 | 唯一事实源 |
 |---|---|
-| 六技能、运行时、执行/恢复、PDF 验收、原生证据 | printcraft-skills / harden-printcraft-skill-execution |
+| 六技能、运行时、执行/恢复、PDF 验收、原生证据 | pdfcraft-skills / harden-pdfcraft-skill-execution |
 | 来源锁、插件本地 Harness、宿主、分发更新 | 本 change |
 
 依赖项：上游 RT-01～04、EX-01～05、PV-01～04、AE-01～03。Harness 只通过公开契约消费，不导入兄弟工程路径或私有函数。上游未完成不阻塞来源校验和清单测试；真实 Harness 闭环依赖上游协议。
@@ -25,11 +25,11 @@
 
 候选保留 candidate-source.json，但验证来源项目/版本、releaseTag=null 和精确摘要。正式来源另用明确版本的发布锁，绑定仓库、tag、commit、技能版本、文件清单与摘要；不把候选改个字符串就当作正式来源。源版本和插件版本允许独立，但映射必须显式且可核验。
 
-上游精确技能清单与插件本地白名单分离，新增 printcraft-harness 在白名单中声明。校验器执行真实字段/类型/版本规则和组件存在性检查，不仅比较 schema URI。离线完整性与正式远端来源验证分开报告。
+上游精确技能清单与插件本地白名单分离，新增 pdfcraft-harness 在白名单中声明。校验器执行真实字段/类型/版本规则和组件存在性检查，不仅比较 schema URI。离线完整性与正式远端来源验证分开报告。
 
 ### 3. 薄 Harness 和宿主首验
 
-Harness 管理路由、显示、交接、用户已有授权和验收状态；状态与执行仍由上游公共入口维护。它消费 `printcraft.execution/1` 和 `printcraft.verification/1`（由上游 change 定义），不接受未知协议静默降级。
+Harness 管理路由、显示、交接、用户已有授权和验收状态；状态与执行仍由上游公共入口维护。它消费 `pdfcraft.execution/1` 和 `pdfcraft.verification/1`（由上游 change 定义），不接受未知协议静默降级。
 
 首个实际验收目标选择当前 Codex 环境；其他宿主只登记矩阵，未来逐项添加证据。portable 清单为规范来源，必要兼容文件由生成器输出，使用实际宿主版本的支持方式验证。当前没有已验收安装，因此不能凭参考仓库中的命令写死永久宿主安装语法。
 
@@ -67,4 +67,4 @@ flowchart LR
 
 ### 显式外部中文 OCR 后端的来源升级
 
-用户已授权 Tesseract 可选后端。插件从新的不可变技能源发行同步 ocr.py 与简繁中文使用契约，保持原生 0.2.1、不安装外部依赖、不透明回退。锁记录新技能源 tag/commit/suite/全部文件摘要，本地 harness 保留。新增 printcraft.ocr/1、printcraft.ocr-backend/1 与 execution/verification 分开。真实中文证据只证明指定 Tesseract/模型/macOS arm64 组合，不追认原生中文支持或手机验收；旧 dev.5 制品保持不变。
+用户已授权 Tesseract 可选后端。插件从新的不可变技能源发行同步 ocr.py 与简繁中文使用契约，保持原生 0.2.1、不安装外部依赖、不透明回退。锁记录新技能源 tag/commit/suite/全部文件摘要，本地 harness 保留。新增 pdfcraft.ocr/1、pdfcraft.ocr-backend/1 与 execution/verification 分开。真实中文证据只证明指定 Tesseract/模型/macOS arm64 组合，不追认原生中文支持或手机验收；旧 dev.5 制品保持不变。

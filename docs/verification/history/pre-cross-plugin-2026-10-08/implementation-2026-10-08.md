@@ -1,10 +1,10 @@
 # PrintCraft 插件实施验收（2026-10-08）
 
-候选 0.1.0-dev.2；OpenSpec change: harden-printcraft-plugin-delivery。**21/24 项任务完成**；正式身份/发布与最终归档仍开放。
+候选 0.1.0-dev.2；OpenSpec change: harden-pdfcraft-plugin-delivery。**21/24 项任务完成**；正式身份/发布与最终归档仍开放。
 
 ## 实现
 
-六项上游快照与一项本地 printcraft-harness 精确分开计数。候选来源绑定 sourceProject、sourceVersion、suite SHA 和逐文件 SHA，禁止非空 releaseTag/sourceCommit 冒充候选。正式锁校验 tag/commit/版本格式，但离线检查只报告 OFFLINE_IDENTITY_ONLY_REMOTE_NOT_VERIFIED，不伪称远端已验证。
+六项上游快照与一项本地 pdfcraft-harness 精确分开计数。候选来源绑定 sourceProject、sourceVersion、suite SHA 和逐文件 SHA，禁止非空 releaseTag/sourceCommit 冒充候选。正式锁校验 tag/commit/版本格式，但离线检查只报告 OFFLINE_IDENTITY_ONLY_REMOTE_NOT_VERIFIED，不伪称远端已验证。
 
 作者端校验清单字段、类型、SemVer、组件、已知宿主扩展与资源；根 portable 清单生成 Codex 兼容清单，同名同版本。此作者端严格校验不是一个新的客户端加载器，不替代宿主实际容错规则。
 
@@ -12,7 +12,7 @@ Harness 只委托包内上游公开入口，消费 execution/1 / verification/1�
 
 ```mermaid
 flowchart LR
-  S[printcraft-skills 六项技能] -->|受控同步和 SHA| P[插件快照]
+  S[pdfcraft-skills 六项技能] -->|受控同步和 SHA| P[插件快照]
   M[portable plugin.json] --> G[生成 Codex 清单]
   P --> C[隔离 Codex 安装缓存]
   G --> C
@@ -61,10 +61,10 @@ python3 -I -B scripts/validate_package.py
 python3 -I -B -m unittest discover -s tests
 python3 scripts/generate_host_manifest.py
 codex plugin marketplace add <隔离本地marketplace> --json
-codex plugin add printcraft@printcraft-local-validation --json
+codex plugin add pdfcraft@pdfcraft-local-validation --json
 # app-server initialize 后调用 plugin/read，marketplacePath 指向 marketplace.json 文件
 codex exec --ephemeral --json --sandbox workspace-write --add-dir <隔离目录> -m gpt-5.6-sol <验收提示>
-openspec validate harden-printcraft-plugin-delivery --strict
+openspec validate harden-pdfcraft-plugin-delivery --strict
 python3 scripts/evidence.py --check docs/verification/evidence-index.json
 ```
 
